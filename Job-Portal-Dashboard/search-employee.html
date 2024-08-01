@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/custom-style.css">
+
+</head>
+
+<body>
+
+    <!-- Main Begin  -->
+    <main>
+        <div class="mainWrapper">
+            <div class="pageWrapper">
+                <!-- Aside Begin -->
+                <div class="side_nav side_nav_fixed">
+                    <div class="sidenav_logo">
+                        Chakri.com 
+                        <button class="btn navBtn"><i class="fas fa-bars"></i></button>
+                    </div>
+                    <div class="sideNav_menu">
+                        <!-- <div class="heading">
+                            Dashboard
+                        </div> -->
+                        <ul class="menuLinks">
+                            <li class="menulink">
+                                <a href="#">
+                                    <span class="menuicon"><i class="fas fa-home"></i></span>
+                                    <span class="menuTitle">Dashboard</span>
+                                    <span class="menu-arr"><i class="fas fa-angle-right"></i></span>
+                                </a>
+                            </li>
+                            <li class="menulink">
+                                <a href="profile-page.html">
+                                    <span class="menuicon"><i class="fas fa-user-alt"></i></span>
+                                    <span class="menuTitle">Profile</span>
+                                    <span class="menu-arr"><i class="fas fa-angle-right"></i></span>
+                                </a>
+                            </li>
+                            <li class="menulink">
+                                <a href="job-listing.html">
+                                    <span class="menuicon"><i class="fas fa-briefcase"></i></span>
+                                    <span class="menuTitle">Jobs Feed</span>
+                                    <span class="menu-arr"><i class="fas fa-angle-right"></i></span>
+                                </a>
+                            </li>
+                            <li class="menulink">
+                                <a href="search-employee.html">
+                                    <span class="menuicon"><i class="fas fa-briefcase"></i></span>
+                                    <span class="menuTitle">Find Candidtes</span>
+                                    <span class="menu-arr"><i class="fas fa-angle-right"></i></span>
+                                </a>
+                            </li>
+                            <li class="menulink">
+                                <a href="#">
+                                    <span class="menuicon"><i class="fas fa-briefcase"></i></span>
+                                    <span class="menuTitle">My Resume</span>
+                                    <span class="menu-arr"><i class="fas fa-angle-right"></i></span>
+                                </a>
+                            </li>
+                            <li class="menulink">
+                                <a href="#">
+                                    <span class="menuicon"><i class="fas fa-sign-out-alt"></i></span>
+                                    <span class="menuTitle">Log Out</span>
+                                    <span class="menu-arr"><i class="fas fa-angle-right"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Aside End  -->
+                <!-- Body cONTENT Wrapper : Begin  -->
+                <div class="bodyWrapper">
+                    <!-- Page Header : Begin  -->
+                    <div class="pageHeader">
+                        <div class="d-flex align-items-stretch justify-content-between flex-lg-grow-1">
+                            <div class="d-flex align-items-stretch">
+                                <div class="hdrMenu">
+                                    <ul class="headerMenu-lists">
+                                        <li>
+                                            <a href="#">Dashboards</a>
+                                        </li>
+                                        <li>
+                                            <a href="job-listing.html">Find Jobs</a>
+                                        </li>
+                                        <li>
+                                            <a href="search-employee.html">Find Employee</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Categories</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="hdr-right">
+                                <div class="user-pic">
+                                    <img src="images/profile-img.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Page Header : End  -->
+
+                    <!-- Page title : Begin  -->
+                    <div class="pageTitle-div">
+                        <div class="container-fluid d-flex flex-stack">
+                            <p class="m-0 section_title"><b>Browse Resumes</b></p>
+                        </div>
+                    </div>
+                    <!-- Page title : End  -->
+                    <!-- Page Content Begin  -->
+                    <div class="pageContent">
+                        <div class="container-fluid">
+                            <div class="jobListing-outter">
+                                <!-- Job Serch Form Begin  -->
+                                <div class="jobSearchDiv2 mb-5">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="search-form-block margin-top-40">
+                                                <div class="search-field-item">
+                                                    <i class="fas fa-search"></i>
+                                                    <input id="intro-keywords" type="text" placeholder="Search Jobs Keywords..." />
+                                                </div>
+                                                <div class="search-field-item">
+                                                    <div class="btn-group bootstrap-select default dropup w-100">
+                                                        <select class="selectpicker default" data-live-search="true" data-selected-text-format="count" data-size="5" title="Select Location" tabindex="-98">
+                                                            <option class="bs-title-option" value="">Select Location</option>
+                                                            <option>Afghanistan</option>
+                                                            <option>Albania</option>
+                                                            <option>Algeria</option>
+                                                            <option>Brazil</option>
+                                                            <option>Burundi</option>
+                                                            <option>Bulgaria</option>
+                                                            <option>Germany</option>
+                                                            <option>Grenada</option>
+                                                            <option>Guatemala</option>
+                                                            <option>Iceland</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="search-field-item">
+                                                    <div class="btn-group bootstrap-select default w-100">
+                                                        <select class="selectpicker default" data-live-search="true" data-selected-text-format="count" data-size="5" title="All Categories" tabindex="-98">
+                                                            <option class="bs-title-option" value="">All Categories</option>
+                                                            <option>Customer Service</option>
+                                                            <option>Data Analytics</option>
+                                                            <option>Web Designing</option>
+                                                            <option>Software Developing</option>
+                                                            <option>Networking</option>
+                                                            <option>Sales &amp; Marketing</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="search-button-div">
+                                                    <button class="button ripple-effect"><i class="fas fa-search"></i> Search Jobs</button>
+                                                </div>
+                                            </div>
+                                            <p class="search-trending-item">
+                                                <span class="trending-items">Trending Jobs Keywords:</span> <a href="#">Web Designer</a> <a href="#">Web Developer</a> <a href="#">Graphic Designer</a> <a href="#">PHP Developer</a> <a href="#">IOS Developer</a>
+                                                <a href="#">Android Developer</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <!-- Job Search Form End  -->
+
+                                <!-- Job Listing  -->
+                                <div class="candidateListing-wrapper">
+                                    <div class="card1">
+                                        <div class="card1-body">
+                                            <div class="candidatelists row">
+                                                <!-- Col : Begin  -->
+                                                <div class="col-md-6 candidateCol">
+                                                    <div class="resumesItem">
+                                                        <div class="resumesItem-content">
+                                                            <a href="employee-details.html"><img class="resume-thumb" src="images/avatar-1.png" alt=""></a>
+                                                            <div class="candidate-info">
+                                                                <div class="manager-name">
+                                                                    <h4><a href="employee-details.html">John Doe</a></h4>
+                                                                    <h5>Web</h5>
+                                                                </div>
+                                                                <div class="manager-meta">
+                                                                    <span class="location"><i class="fas fa-map-marker-alt"></i> Kolkata, WB, India</span>
+                                                                    <span class="rate"><i class="fas fa-check"></i> Open to Work</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-body">
+                                                            <div class="content">
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, qui aspernatur accusantium! Molestiae, cum cupiditate nam optio dignissimos magnam velit, perspiciatis amet qui aut nobis, quisquam, laudantium vitae eos ipsam.</p>
+                                                            </div>
+                                                            <div class="resume-skills d-flex justify-content-between">
+                                                                <div class="tag-list">
+                                                                    <span>HTML5</span>
+                                                                    <span>CSS3</span>
+                                                                    <span>Bootstrap</span>
+                                                                    <span>Wordpress</span>
+                                                                </div>
+                                                                <div class="resume-exp">
+                                                                    <a href="#" class="btn btn-common btn-xs">Exp. 4 Year</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Col : End  -->
+                                                <!-- Col : Begin  -->
+                                                <div class="col-md-6 candidateCol">
+                                                    <div class="resumesItem">
+                                                        <div class="resumesItem-content">
+                                                            <a href="employee-details.html"><img class="resume-thumb" src="images/profile-img.jpg" alt=""></a>
+                                                            <div class="candidate-info">
+                                                                <div class="manager-name">
+                                                                    <h4><a href="employee-details.html">Chris Hernandeziyan</a></h4>
+                                                                    <h5>Java developer</h5>
+                                                                </div>
+                                                                <div class="manager-meta">
+                                                                    <span class="location"><i class="fas fa-map-marker-alt"></i> Kolkata, WB, India</span>
+                                                                    <span class="rate"><i class="fas fa-check"></i> Open to Work</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-body">
+                                                            <div class="content">
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, qui aspernatur accusantium! Molestiae, cum cupiditate nam optio dignissimos magnam velit, perspiciatis amet qui aut nobis, quisquam, laudantium vitae eos ipsam.</p>
+                                                            </div>
+                                                            <div class="resume-skills d-flex justify-content-between">
+                                                                <div class="tag-list">
+                                                                    <span>Java</span>
+                                                                    <span>Agile</span>
+                                                                    <span>DevOps</span>
+                                                                    <span>Hibernate and JPA</span>
+                                                                </div>
+                                                                <div class="resume-exp">
+                                                                    <a href="employee-details.html" class="btn btn-common btn-xs">Exp. 4 Year</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Col : End  -->
+                                                <!-- Col : Begin  -->
+                                                <div class="col-md-6 candidateCol">
+                                                    <div class="resumesItem">
+                                                        <div class="resumesItem-content">
+                                                            <a href="employee-details.html"><img class="resume-thumb" src="images/avatar-1.png" alt=""></a>
+                                                            <div class="candidate-info">
+                                                                <div class="manager-name">
+                                                                    <h4><a href="employee-details.html">John Doe</a></h4>
+                                                                    <h5>Java developer</h5>
+                                                                </div>
+                                                                <div class="manager-meta">
+                                                                    <span class="location"><i class="fas fa-map-marker-alt"></i> Kolkata, WB, India</span>
+                                                                    <span class="rate"><i class="fas fa-check"></i> Open to Work</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-body">
+                                                            <div class="content">
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, qui aspernatur accusantium! Molestiae, cum cupiditate nam optio dignissimos magnam velit, perspiciatis amet qui aut nobis, quisquam, laudantium vitae eos ipsam.</p>
+                                                            </div>
+                                                            <div class="resume-skills d-flex justify-content-between">
+                                                                <div class="tag-list">
+                                                                    <span>HTML5</span>
+                                                                    <span>CSS3</span>
+                                                                    <span>Bootstrap</span>
+                                                                    <span>Wordpress</span>
+                                                                </div>
+                                                                <div class="resume-exp">
+                                                                    <a href="#" class="btn btn-common btn-xs">Exp. 4 Year</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Col : End  -->
+                                                <!-- Col : Begin  -->
+                                                <div class="col-md-6 candidateCol">
+                                                    <div class="resumesItem">
+                                                        <div class="resumesItem-content">
+                                                            <a href="employee-details.html"><img class="resume-thumb" src="images/avatar-1.png" alt=""></a>
+                                                            <div class="candidate-info">
+                                                                <div class="manager-name">
+                                                                    <h4><a href="#">John Doe</a></h4>
+                                                                    <h5>Java developer</h5>
+                                                                </div>
+                                                                <div class="manager-meta">
+                                                                    <span class="location"><i class="fas fa-map-marker-alt"></i> Kolkata, WB, India</span>
+                                                                    <span class="rate"><i class="fas fa-check"></i> Open to Work</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-body">
+                                                            <div class="content">
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, qui aspernatur accusantium! Molestiae, cum cupiditate nam optio dignissimos magnam velit, perspiciatis amet qui aut nobis, quisquam, laudantium vitae eos ipsam.</p>
+                                                            </div>
+                                                            <div class="resume-skills d-flex justify-content-between">
+                                                                <div class="tag-list">
+                                                                    <span>HTML5</span>
+                                                                    <span>CSS3</span>
+                                                                    <span>Bootstrap</span>
+                                                                    <span>Wordpress</span>
+                                                                </div>
+                                                                <div class="resume-exp">
+                                                                    <a href="#" class="btn btn-common btn-xs">Exp. 4 Year</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Col : End  -->
+                                                <!-- Col : Begin  -->
+                                                <div class="col-md-6 candidateCol">
+                                                    <div class="resumesItem">
+                                                        <div class="resumesItem-content">
+                                                            <a href="employee-details.html"><img class="resume-thumb" src="images/avatar-1.png" alt=""></a>
+                                                            <div class="candidate-info">
+                                                                <div class="manager-name">
+                                                                    <h4><a href="#">John Doe</a></h4>
+                                                                    <h5>Java developer</h5>
+                                                                </div>
+                                                                <div class="manager-meta">
+                                                                    <span class="location"><i class="fas fa-map-marker-alt"></i> Kolkata, WB, India</span>
+                                                                    <span class="rate"><i class="fas fa-check"></i> Open to Work</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-body">
+                                                            <div class="content">
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, qui aspernatur accusantium! Molestiae, cum cupiditate nam optio dignissimos magnam velit, perspiciatis amet qui aut nobis, quisquam, laudantium vitae eos ipsam.</p>
+                                                            </div>
+                                                            <div class="resume-skills d-flex justify-content-between">
+                                                                <div class="tag-list">
+                                                                    <span>HTML5</span>
+                                                                    <span>CSS3</span>
+                                                                    <span>Bootstrap</span>
+                                                                    <span>Wordpress</span>
+                                                                </div>
+                                                                <div class="resume-exp">
+                                                                    <a href="#" class="btn btn-common btn-xs">Exp. 4 Year</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Col : End  -->
+                                                <!-- Col : Begin  -->
+                                                <div class="col-md-6 candidateCol">
+                                                    <div class="resumesItem">
+                                                        <div class="resumesItem-content">
+                                                            <a href="employee-details.html"><img class="resume-thumb" src="images/avatar-1.png" alt=""></a>
+                                                            <div class="candidate-info">
+                                                                <div class="manager-name">
+                                                                    <h4><a href="#">John Doe</a></h4>
+                                                                    <h5>Java developer</h5>
+                                                                </div>
+                                                                <div class="manager-meta">
+                                                                    <span class="location"><i class="fas fa-map-marker-alt"></i> Kolkata, WB, India</span>
+                                                                    <span class="rate"><i class="fas fa-check"></i> Open to Work</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-body">
+                                                            <div class="content">
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, qui aspernatur accusantium! Molestiae, cum cupiditate nam optio dignissimos magnam velit, perspiciatis amet qui aut nobis, quisquam, laudantium vitae eos ipsam.</p>
+                                                            </div>
+                                                            <div class="resume-skills d-flex justify-content-between">
+                                                                <div class="tag-list">
+                                                                    <span>HTML5</span>
+                                                                    <span>CSS3</span>
+                                                                    <span>Bootstrap</span>
+                                                                    <span>Wordpress</span>
+                                                                </div>
+                                                                <div class="resume-exp">
+                                                                    <a href="#" class="btn btn-common btn-xs">Exp. 4 Year</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Col : End  -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Job Listing End  -->
+                            </div>                 
+                        </div>
+                    </div>
+                    <!-- Page Content End  -->
+                </div>
+                <!-- Body cONTENT Wrapper : End  -->
+            </div>
+        </div>
+    </main>
+    <!-- End: Main -->
+
+
+    <!--=== Modals  ===-->
+    <!-- Profile Modal 1 -->
+    <div class="modal customModal" id="profileinfoModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Edit Your Profile Info</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>        
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="" class="formDiv row">
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">First Name:</label>
+                            <input type="text" class="form-control" placeholder="Type Your First Name">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">Last Name:</label>
+                            <input type="text" class="form-control" placeholder="Type Your Last Name">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">Email:</label>
+                            <input type="email" class="form-control" placeholder="Type Your Email">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">Phone Number:</label>
+                            <input type="email" class="form-control" placeholder="Type Your Phone Number">
+                        </div>
+                        <div class="col-md-12 text-center">                            
+                            <input type="submit" class="btn submit_btn w-100" value="Submit">
+                        </div>
+                    </form>
+                </div>            
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile Modal 2 -->
+    <div class="modal customModal" id="professionalModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Edit Professional Details</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>        
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="" class="formDiv row">
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">Title:</label>
+                            <input type="text" class="form-control" placeholder="" value="Web Developer">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">Employement Type:</label>
+                            <select name="" id="" class="form-control">
+                                <option value="">Full Time</option>
+                                <option value="">Part Time</option>
+                                <option value="">Self-employed</option>
+                                <option value="">Internship</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <label class="form_label" for="">Company Name*:</label>
+                            <input type="text" class="form-control" placeholder="" value="Future Netwings" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">Start Date*:</label>
+                            <input type="date" class="form-control" placeholder="">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">End Date*:</label>
+                            <input type="date" class="form-control" placeholder="">
+                        </div>
+                        <div class="col-md-12 text-center">                            
+                            <input type="submit" class="btn submit_btn w-100" value="Submit">
+                        </div>
+                    </form>
+                </div>            
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile Modal 2 -->
+    <div class="modal customModal" id="educationalInfoModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Edit Educational Details</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>        
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="" class="formDiv row">
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">Institute Name:</label>
+                            <input type="text" class="form-control" placeholder="" value="Aliah University">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">Degree:</label>
+                            <select name="" id="" class="form-control">
+                                <option value="">B.tech</option>
+                                <option value="">B.Tech</option>
+                                <option value="">M.tech</option>
+                                <option value="">MBA</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <label class="form_label" for="">Field of Study*:</label>
+                            <input type="text" class="form-control" placeholder="" value="Electronics" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">Start Date*:</label>
+                            <input type="date" class="form-control" placeholder="">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">End Date(or expected)*:</label>
+                            <input type="date" class="form-control" placeholder="">
+                        </div>
+                        <div class="col-md-12 text-center">                            
+                            <input type="submit" class="btn submit_btn w-100" value="Submit">
+                        </div>
+                    </form>
+                </div>            
+            </div>
+        </div>
+    </div>
+    <!-- Profile Modal 2 End -->
+
+    <!-- Profile Modal 3 -->
+    <div class="modal customModal" id="personalInfoModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Edit Personal Details</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>        
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="" class="formDiv row">
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">Date of Birth:</label>
+                            <input type="text" class="form-control" placeholder="" value="Aliah University">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">Genter:</label>
+                            <select name="" id="" class="form-control">
+                                <option value="">Male</option>
+                                <option value="">Female</option>
+                                <option value="">Other</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">Job Title:</label>
+                            <input type="text" class="form-control" placeholder="" value="Developer" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">Current CTC (Yearly)*:</label>
+                            <input type="date" class="form-control" placeholder="">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">Expected CTC (Yearly)*:</label>
+                            <input type="date" class="form-control" placeholder="">
+                        </div>
+                        <div class="col-md-12 text-center">                            
+                            <input type="submit" class="btn submit_btn w-100" value="Submit">
+                        </div>
+                    </form>
+                </div>            
+            </div>
+        </div>
+    </div>
+    <!-- Profile Modal 3 End -->
+
+
+
+    <!-- Jquery-->
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/custom-script.js"></script>
+
+    
+
+
+
+</body>
+
+</html>

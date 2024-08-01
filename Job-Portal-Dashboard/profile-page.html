@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/custom-style.css">
+
+</head>
+
+<body>
+
+    <!-- Main Begin  -->
+    <main>
+        <div class="mainWrapper">
+            <div class="pageWrapper">
+                <!-- Aside Begin -->
+                <div class="side_nav side_nav_fixed">
+                    <div class="sidenav_logo">
+                        Chakri.com
+                        <button class="btn navBtn"><i class="fas fa-bars"></i></button>
+                    </div>
+                    <div class="sideNav_menu">
+                        <!-- <div class="heading">
+                            Dashboard
+                        </div> -->
+                        <ul class="menuLinks">
+                            <li class="menulink">
+                                <a href="#">
+                                    <span class="menuicon"><i class="fas fa-home"></i></span>
+                                    <span class="menuTitle">Dashboard</span>
+                                    <span class="menu-arr"><i class="fas fa-angle-right"></i></span>
+                                </a>
+                            </li>
+                            <li class="menulink">
+                                <a href="profile-page.html">
+                                    <span class="menuicon"><i class="fas fa-user-alt"></i></span>
+                                    <span class="menuTitle">Profile</span>
+                                    <span class="menu-arr"><i class="fas fa-angle-right"></i></span>
+                                </a>
+                            </li>
+                            <li class="menulink">
+                                <a href="job-listing.html">
+                                    <span class="menuicon"><i class="fas fa-briefcase"></i></span>
+                                    <span class="menuTitle">Jobs Feed</span>
+                                    <span class="menu-arr"><i class="fas fa-angle-right"></i></span>
+                                </a>
+                            </li>
+                            <li class="menulink">
+                                <a href="search-employee.html">
+                                    <span class="menuicon"><i class="fas fa-briefcase"></i></span>
+                                    <span class="menuTitle">Find Candidtes</span>
+                                    <span class="menu-arr"><i class="fas fa-angle-right"></i></span>
+                                </a>
+                            </li>
+                            <li class="menulink">
+                                <a href="#">
+                                    <span class="menuicon"><i class="fas fa-briefcase"></i></span>
+                                    <span class="menuTitle">My Resume</span>
+                                    <span class="menu-arr"><i class="fas fa-angle-right"></i></span>
+                                </a>
+                            </li>
+                            <li class="menulink">
+                                <a href="#">
+                                    <span class="menuicon"><i class="fas fa-sign-out-alt"></i></span>
+                                    <span class="menuTitle">Log Out</span>
+                                    <span class="menu-arr"><i class="fas fa-angle-right"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Aside End  -->
+                <!-- Body cONTENT Wrapper : Begin  -->
+                <div class="bodyWrapper">
+                    <!-- Page Header : Begin  -->
+                    <div class="pageHeader">
+                        <div class="d-flex align-items-stretch justify-content-between flex-lg-grow-1">
+                            <div class="d-flex align-items-stretch">
+                                <div class="hdrMenu">
+                                    <ul class="headerMenu-lists">
+                                        <li>
+                                            <a href="#">Dashboards</a>
+                                        </li>
+                                        <li>
+                                            <a href="job-listing.html">Find Jobs</a>
+                                        </li>
+                                        <li>
+                                            <a href="search-employee.html">Find Employee</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Categories</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="hdr-right">
+                                <div class="user-pic">
+                                    <img src="images/profile-img.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Page Header : End  -->
+
+                    <!-- Page title : Begin  -->
+                    <div class="pageTitle-div">
+                        <div class="container-fluid d-flex flex-stack">
+                            <p class="m-0 section_title"><b>Profile</b></p>
+                        </div>
+                    </div>
+                    <!-- Page title : End  -->
+                    <!-- Page Content Begin  -->
+                    <div class="pageContent">
+                        <div class="container-fluid">
+                            <!-- Personal Info Row Begin  -->
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <!-- Card Begin  -->
+                                    <div class="card1">
+                                        <!-- <div class="card1-hdr">
+                                        </div> -->
+                                        <div class="card1-body">
+                                            <button class="btn editBtn icon-btn" data-bs-toggle="modal" data-bs-target="#profileinfoModal"><i class="fas fa-pencil-alt"></i></button>
+                                            <div class="info-div d-flex align-items-center">
+                                                <div class="infoImg me-3">
+                                                    <img src="images/profile-img.jpg" alt="">
+                                                </div>
+                                                <div class="info-cont">
+                                                    <p class="mb-0"><b>Sabir Iqbal Alamin</b></p>
+                                                    <p class="mb-0">sabir.iqbal.alamin@gmail.com</p>
+                                                    <p class="mb-0">9123376114</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Card End    -->
+                                </div>
+                            </div>
+                            <!-- Row End  -->
+                            <!-- Profession Info Row Begin  -->
+                            <div class="row mb-4">
+                                <div class="col-md-12">
+                                    <!-- Card Begin  -->
+                                    <div class="card1">
+                                        <div class="card1-hdr border-bottom">
+                                            <h3 class="section_title">Professional Details</h3>
+                                            <button class="btn addBtn icon-btn bg-success" data-bs-toggle="modal" data-bs-target="#professionalModal"><i class="fas fa-plus"></i></button>
+                                        </div>
+                                        <div class="card1-body">
+                                            <!-- Row : Begin  -->
+                                            <div class="row">
+                                                <!-- Col : Begin  -->
+                                                <div class="col-md-4">
+                                                    <div class="card2">
+                                                        <div class="card2-body pe-45">
+                                                            <button class="btn editBtn icon-btn" data-bs-toggle="modal" data-bs-target="#professionalModal"><i class="fas fa-pencil-alt"></i></button>
+                                                            <div class="info-div d-flex align-items-center">
+                                                                <div class="info-cont">
+                                                                    <p class="mb-0"><b>Future Netwings</b></p>
+                                                                    <p class="mb-0">Android Developer</p>
+                                                                    <p class="mb-0">Nov 27 to Present</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Col : Begin  -->
+                                                <!-- Col : Begin  -->
+                                                <div class="col-md-4">
+                                                    <div class="card2">
+                                                        <div class="card2-body pe-45">
+                                                            <button class="btn editBtn icon-btn" data-bs-toggle="modal" data-bs-target="#professionalModal"><i class="fas fa-pencil-alt"></i></button>
+                                                            <div class="info-div d-flex align-items-center">
+                                                                <div class="info-cont">
+                                                                    <p class="mb-0"><b>Future Netwings</b></p>
+                                                                    <p class="mb-0">Android Developer</p>
+                                                                    <p class="mb-0">Nov 27 to Present</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Col : Begin  -->
+                                                <!-- Col : Begin  -->
+                                                <div class="col-md-4">
+                                                    <div class="card2">
+                                                        <div class="card2-body pe-45">
+                                                            <button class="btn editBtn icon-btn" data-bs-toggle="modal" data-bs-target="#professionalModal"><i class="fas fa-pencil-alt"></i></button>
+                                                            <div class="info-div d-flex align-items-center">
+                                                                <div class="info-cont">
+                                                                    <p class="mb-0"><b>Future Netwings</b></p>
+                                                                    <p class="mb-0">Android Developer</p>
+                                                                    <p class="mb-0">Nov 27 to Present</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Col : Begin  -->
+                                            </div>
+                                             <!-- Row : Begin  -->
+                                        </div>
+                                    </div>
+                                    <!-- Card End    -->
+                                </div>
+                            </div>
+                            <!-- Row End  -->      
+                            <!-- Educational Info Row Begin  -->
+                            <div class="row mb-4">
+                                <div class="col-md-12">
+                                    <!-- Card Begin  -->
+                                    <div class="card1">
+                                        <div class="card1-hdr border-bottom">
+                                            <h3 class="section_title">Educational Details</h3>
+                                            <button class="btn addBtn icon-btn bg-success" data-bs-toggle="modal" data-bs-target="#educationalInfoModal"><i class="fas fa-plus"></i></button>
+                                        </div>
+                                        <div class="card1-body">
+                                            <!-- Row : Begin  -->
+                                            <div class="row">
+                                                <!-- Col : Begin  -->
+                                                <div class="col-md-4">
+                                                    <div class="card2">
+                                                        <div class="card2-body pe-45">
+                                                            <button class="btn editBtn icon-btn" data-bs-toggle="modal" data-bs-target="#educationalInfoModal"><i class="fas fa-pencil-alt"></i></button>
+                                                            <div class="info-div d-flex align-items-center">
+                                                                <div class="info-cont">
+                                                                    <p class="mb-0"><b>Aliah University</b></p>
+                                                                    <p class="mb-0">Bachelor's Degree, Electronics</p>
+                                                                    <p class="mb-0">2012-2016</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Col : Begin  -->
+                                                <!-- Col : Begin  -->
+                                                <div class="col-md-4">
+                                                    <div class="card2">
+                                                        <div class="card2-body pe-45">
+                                                            <button class="btn editBtn icon-btn" data-bs-toggle="modal" data-bs-target="#educationalInfoModal"><i class="fas fa-pencil-alt"></i></button>
+                                                            <div class="info-div d-flex align-items-center">
+                                                                <div class="info-cont">
+                                                                    <p class="mb-0"><b>Aliah University</b></p>
+                                                                    <p class="mb-0">Bachelor's Degree, Electronics</p>
+                                                                    <p class="mb-0">2012-2016</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Col : Begin  -->
+                                                <!-- Col : Begin  -->
+                                                <div class="col-md-4">
+                                                    <div class="card2">
+                                                        <div class="card2-body pe-45">
+                                                            <button class="btn editBtn icon-btn" data-bs-toggle="modal" data-bs-target="#educationalInfoModal"><i class="fas fa-pencil-alt"></i></button>
+                                                            <div class="info-div d-flex align-items-center">
+                                                                <div class="info-cont">
+                                                                    <p class="mb-0"><b>Aliah University</b></p>
+                                                                    <p class="mb-0">Bachelor's Degree, Electronics</p>
+                                                                    <p class="mb-0">2012-2016</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Col : Begin  -->
+                                            </div>
+                                             <!-- Row : Begin  -->
+                                        </div>
+                                    </div>
+                                    <!-- Card End    -->
+                                </div>
+                            </div>
+                            <!-- Row End  -->   
+                            <!-- Educational Info Row Begin  -->
+                            <div class="row mb-4">
+                                <div class="col-md-12">
+                                    <!-- Card Begin  -->
+                                    <div class="card1">
+                                        <div class="card1-hdr border-bottom">
+                                            <h3 class="section_title">More Details</h3>
+                                            <button class="btn addBtn icon-btn bg-success" data-bs-toggle="modal" data-bs-target="#personalInfoModal"><i class="fas fa-plus"></i></button>
+                                            <button class="btn editBtn icon-btn" style="right:50px;" data-bs-toggle="modal" data-bs-target="#personalInfoModal"><i class="fas fa-pencil-alt"></i></button>
+                                        </div>
+                                        <div class="card1-body">
+                                            <!-- Row : Begin  -->
+                                            <div class="row">
+                                                <!-- Col : Begin  -->
+                                                <div class="col-md-4">
+                                                   <p><b>Date of Birth:</b> 05/10/1992</p>
+                                                </div>
+                                                <!-- Col : Begin  -->
+                                                <!-- Col : Begin  -->
+                                                <div class="col-md-4">
+                                                    <p><b>Gender:</b> Male</p>
+                                                </div>
+                                                <!-- Col : Begin  -->
+                                                <!-- Col : Begin  -->
+                                                <div class="col-md-4">
+                                                    <p><b>Current Location:</b> Kolkata</p>
+                                                </div>
+                                                <!-- Col : Begin  -->
+                                                <!-- Col : Begin  -->
+                                                <div class="col-md-4">
+                                                    <p><b>Job Title:</b> Developer</p>
+                                                </div>
+                                                <!-- Col : Begin  -->
+                                                <!-- Col : Begin  -->
+                                                <div class="col-md-4">
+                                                    <p><b>Current CTC (Yearly):</b> 20 lakh</p>
+                                                </div>
+                                                <!-- Col : Begin  -->
+                                                <!-- Col : Begin  -->
+                                                <div class="col-md-4">
+                                                    <p><b>Expected CTC (Yearly):</b> 25 lakh</p>
+                                                </div>
+                                                <!-- Col : Begin  -->
+                                            </div>
+                                             <!-- Row : Begin  -->
+                                        </div>
+                                    </div>
+                                    <!-- Card End    -->
+                                </div>
+                            </div>
+                            <!-- Row End  -->                    
+                        </div>
+                    </div>
+                    <!-- Page Content End  -->
+                </div>
+                <!-- Body cONTENT Wrapper : End  -->
+            </div>
+        </div>
+    </main>
+    <!-- End: Main -->
+
+
+    <!--=== Modals  ===-->
+    <!-- Profile Modal 1 -->
+    <div class="modal customModal" id="profileinfoModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Edit Your Profile Info</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>        
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="" class="formDiv row">
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">First Name:</label>
+                            <input type="text" class="form-control" placeholder="Type Your First Name">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">Last Name:</label>
+                            <input type="text" class="form-control" placeholder="Type Your Last Name">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">Email:</label>
+                            <input type="email" class="form-control" placeholder="Type Your Email">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">Phone Number:</label>
+                            <input type="email" class="form-control" placeholder="Type Your Phone Number">
+                        </div>
+                        <div class="col-md-12 text-center">                            
+                            <input type="submit" class="btn submit_btn" value="Submit">
+                        </div>
+                    </form>
+                </div>            
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile Modal 2 -->
+    <div class="modal customModal" id="professionalModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Edit Professional Details</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>        
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="" class="formDiv row">
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">Title:</label>
+                            <input type="text" class="form-control" placeholder="" value="Web Developer">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">Employement Type:</label>
+                            <select name="" id="" class="form-control">
+                                <option value="">Full Time</option>
+                                <option value="">Part Time</option>
+                                <option value="">Self-employed</option>
+                                <option value="">Internship</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <label class="form_label" for="">Company Name*:</label>
+                            <input type="text" class="form-control" placeholder="" value="Future Netwings" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">Start Date*:</label>
+                            <input type="date" class="form-control" placeholder="">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">End Date*:</label>
+                            <input type="date" class="form-control" placeholder="">
+                        </div>
+                        <div class="col-md-12 text-center">                            
+                            <input type="submit" class="btn submit_btn" value="Submit">
+                        </div>
+                    </form>
+                </div>            
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile Modal 2 -->
+    <div class="modal customModal" id="educationalInfoModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Edit Educational Details</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>        
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="" class="formDiv row">
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">Institute Name:</label>
+                            <input type="text" class="form-control" placeholder="" value="Aliah University">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">Degree:</label>
+                            <select name="" id="" class="form-control">
+                                <option value="">B.tech</option>
+                                <option value="">B.Tech</option>
+                                <option value="">M.tech</option>
+                                <option value="">MBA</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <label class="form_label" for="">Field of Study*:</label>
+                            <input type="text" class="form-control" placeholder="" value="Electronics" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">Start Date*:</label>
+                            <input type="date" class="form-control" placeholder="">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">End Date(or expected)*:</label>
+                            <input type="date" class="form-control" placeholder="">
+                        </div>
+                        <div class="col-md-12 text-center">                            
+                            <input type="submit" class="btn submit_btn" value="Submit">
+                        </div>
+                    </form>
+                </div>            
+            </div>
+        </div>
+    </div>
+    <!-- Profile Modal 2 End -->
+
+    <!-- Profile Modal 3 -->
+    <div class="modal customModal" id="personalInfoModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Edit Personal Details</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>        
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="" class="formDiv row">
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">Date of Birth:</label>
+                            <input type="text" class="form-control" placeholder="" value="Aliah University">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">Genter:</label>
+                            <select name="" id="" class="form-control">
+                                <option value="">Male</option>
+                                <option value="">Female</option>
+                                <option value="">Other</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">Job Title:</label>
+                            <input type="text" class="form-control" placeholder="" value="Developer" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">Current CTC (Yearly)*:</label>
+                            <input type="date" class="form-control" placeholder="">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label class="form_label" for="">Expected CTC (Yearly)*:</label>
+                            <input type="date" class="form-control" placeholder="">
+                        </div>
+                        <div class="col-md-12 text-center">                            
+                            <input type="submit" class="btn submit_btn" value="Submit">
+                        </div>
+                    </form>
+                </div>            
+            </div>
+        </div>
+    </div>
+    <!-- Profile Modal 3 End -->
+
+    <!-- Jquery-->
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/custom-script.js"></script>
+
+    
+
+
+
+</body>
+
+</html>
