@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>infinite slide v2 </title>
+	<meta name="Keywords" content="">
+	<meta name="Description"
+		content="「infinite slide v2」はCSS3 Animationによる無限スクロールを実装するjQueryプラグインです。設置は分かりやすく、動作は滑らか、カスタマイズも簡単です。">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+	<link rel="stylesheet" href="style.css" />
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="infiniteslidev2.js"></script>
+
+	<style type="text/css">
+		.slide_vertical_wrap {
+			position: fixed;
+			left: 0;
+			top: 0;
+			height: 100vh;
+			overflow: hidden;
+		}
+
+		.slide_vertical_wrap img {
+			vertical-align: bottom;
+		}
+
+		.section_vertical {
+			margin-left: 350px;
+		}
+
+		.section_vertical header {
+			background: #eee;
+			padding: 20px;
+			margin-bottom: 20px;
+		}
+
+		.section_vertical header h1 {
+			font-size: 1.5em;
+			font-weight: bold;
+		}
+	</style>
+
+	<script type="text/javascript">
+		$(function () {
+			$('.slide_vertical').infiniteslide({
+				direction: 'up',
+				pauseonhover: false
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+	<div class="section_vertical">
+		
+
+		<div class="module">
+			<h3>Javascript</h3>
+			<pre><code>
+$('.slide_vertical').infiniteslide({
+	direction: 'down',
+	pauseonhover: false
+});
+
+		</code></pre>
+		</div>
+
+		<div class="module">
+			<h3>CSS</h3>
+			<pre><code>
+.slide_vertical_wrap {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100vh;
+	overflow: hidden;
+}
+		</code></pre>
+		</div>
+	</div>
+
+	<div class="slide_vertical_wrap">
+		<ul class="slide_vertical">
+			<li><img src="img/img4.jpg" alt="" /></li>
+			<li><img src="img/img5.jpg" alt="" /></li>
+			<li><img src="img/img1.jpg" alt="" /></li>
+			<li><img src="img/img4.jpg" alt="" /></li>
+			<li><img src="img/img5.jpg" alt="" /></li>
+			<li><img src="img/img1.jpg" alt="" /></li>
+		</ul>
+	</div>
+
+</body>
+
+</html>
