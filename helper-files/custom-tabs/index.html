@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+    <!-- Head : Begin  -->
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no "> 
+        
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,600;1,700&display=swap');
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            .tab-col{
+                width: 700px;
+                max-width: 100%;
+                padding: 0 15px;
+            }
+        </style>
+
+
+        <!-- Tab css  -->
+        <style>
+            .tabWrapper {
+                margin-top: 37px;
+            }
+            .tabWrapper .tabs{
+                margin: 0;
+                padding: 0;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                padding-left: 0;
+                list-style: none;
+                border-bottom: 2px solid #eaeaea;
+                margin-bottom: 9px !important;
+            }
+           .tabs li{                
+                margin-bottom: 0;
+                padding-left: 0;
+                width: 33%;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 18px;
+                line-height: 30px;
+                font-weight: 300;
+                color: #23242B;
+                list-style: none;
+                position: relative;
+            }
+           .tabs li a {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 18px;
+                font-weight: 700;
+                color: #23242b;
+                padding: 5px 25px 3px 29px;
+                position: relative;
+                margin: 0 5px;
+                text-decoration: none;
+            }
+
+            .tabs li a.active{
+                color: #eb002a;
+            }
+
+            .tabs li a::before {
+                width: 0;
+                left: 50%;
+                transform: translate(-50%, 0);
+                bottom: -2px;
+                transition: all 0.3s ease;
+                content: "";
+                position: absolute;
+                height: 2px;
+                background-color: #eb002a;
+            }
+            .tabs li a.active::before,  
+            .tabs li a:hover::before {
+                width: 100%;
+                transition: all 0.3s ease;
+            }
+
+            .tab-cont ul{
+                padding: 0;
+                margin-left: 0;
+            }
+
+            .tab-cont ul li {
+                font-size: 16px;
+                line-height: 32px;
+                font-weight: 400;
+                padding-left: 19px;
+                margin-bottom: 8px;
+                font-family: 'Montserrat', sans-serif;
+                color: #23242B;
+                margin: 0 0 10px;
+                list-style: none;
+                position: relative;
+            }
+            .tab-cont ul li::before {
+                position: absolute;
+                content: '';
+                width: 7px;
+                height: 7px;
+                left: 0;
+                display: block;
+                background-color: #23242b;
+                top: 13px;
+                border-radius: 50%;
+            }
+
+            /* Responsive  */
+            @media only screen and (max-width: 767px) {
+                .tabs li a{
+                    font-size: 15px;
+                    padding: 4px 10px 3px 10px;
+                }                
+            }
+
+            @media only screen and (max-width: 480px) {
+                .tabs li a {
+                    font-size: 13px;
+                    padding: 4px 3px 3px 4px;
+                }
+            }
+        </style>
+
+
+
+
+
+    </head>
+    <!-- Head : End  -->
+
+    <!-- Body : Begin  -->
+    <body>
+        <section>            
+            <div class="tab-col">
+                
+                <!-- tab : Begin Here -->
+                <div class="tabWrapper">
+                    <ul class="tabs">
+                        <li><a href="#tab-1" class="active">What It Does</a></li>
+                        <li><a href="#tab-2">How It Helps</a></li>
+                        <li><a href="#tab-3">Our Promise</a></li>
+                    </ul>
+                    <div id="tab-1">
+                        <div class="tab-cont">
+                            <ul>
+                                <li>Get a better erection, more easily, at any age.</li>
+                                <li>Clinical-strength Acoustic Wave Therapy from the comfort of home.</li>
+                                <li>Save time and money compared to in-clinic treatment.</li>
+                            </ul>                                    
+                        </div>
+                    </div>
+                    <div id="tab-2">
+                        <div class="tab-cont">
+                            <ul>
+                                <li>Poor blood flow is the leading cause of Erectile Dysfunction (ED).</li>
+                                <li>Clear the plaque in your blood vessels that makes getting hard more difficult.</li>
+                                <li>Grow healthy blood vessels and tissue in the penis to improve performance.</li>
+                            </ul>                                    
+                        </div>
+                    </div>
+                    <div id="tab-3">
+                        <div class="tab-cont">
+                            <ul>
+                                <li>Our underlying technology works.</li>
+                                <li>It’s FDA registered and patented around the globe.</li>
+                                <li>93% of men get better using The Phoenix.</li>
+                                <li>If it isn’t right for you, we’ll give you your money back*.</li>
+                            </ul>                                    
+                        </div>
+                    </div>
+                    </div>
+                <!-- tab : end Here -->
+                
+            </div>                
+        </section>
+
+       
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+       
+
+        <!-- Tab jquery  -->
+        <script>
+            $(document).ready(function() {
+                $('ul.tabs').each(function(){
+                var active, content, links = $(this).find('a');
+                active = links.first().addClass('active');
+                content = $(active.attr('href'));
+                links.not(':first').each(function () {
+                    $($(this).attr('href')).hide();
+                });
+                $(this).find('a').click(function(e){
+                    active.removeClass('active');
+                    content.hide();
+                    active = $(this);
+                    content = $($(this).attr('href'));
+                    active.addClass('active');
+                    content.show();
+                    return false;
+                });
+                });
+            });
+        </script>
+        
+    </body>
+    <!-- Body : End  -->
+</html>

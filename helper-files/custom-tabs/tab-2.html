@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+    <!-- Head : Begin  -->
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no "> 
+        
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,600;1,700&display=swap');
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            .tab-col{
+                width: 700px;
+                max-width: 100%;
+                padding: 0 15px;
+            }
+        </style>
+
+<!-- https://codepen.io/hami/pen/NNqYXq -->
+
+
+        <!-- Tab css  -->
+        <style>
+            .tabWrapper {
+                margin-top: 37px;
+                position: relative;
+            }
+            .tabWrapper .tab-nav{
+                margin: 0;
+                padding: 0;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                padding-left: 0;
+                list-style: none;
+                margin: 0;
+                border-bottom: 2px solid #eaeaea;
+                margin-bottom: 9px !important;
+            }
+           .tabWrapper .tab-nav > li{                
+                margin-bottom: 0;
+                padding-left: 0;
+                width: 33%;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 17px;
+                line-height: 30px;
+                font-weight: 300;
+                color: #23242B;
+                list-style: none;
+            }
+           .tabWrapper .tab_btn {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 17px;
+                font-weight: 700;
+                color: #23242b;
+                padding: 5px 25px 3px 25px;
+                position: relative;
+                margin: 0 5px;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            .tabWrapper .tab-nav li.active  .tab_btn{
+                color: #eb002a;
+            }
+
+            .tabWrapper .tab-nav li .tab_btn::before {
+                width: 0;
+                left: 50%;
+                transform: translate(-50%, 0);
+                bottom: -2px;
+                transition: all 0.3s ease;
+                content: "";
+                position: absolute;
+                height: 2px;
+                background-color: #eb002a;
+            }
+            .tabWrapper .tab-nav li.active .tab_btn::before,  
+            .tabWrapper .tab-nav li .tab_btn:hover::before {
+                width: 100%;
+                transition: all 0.3s ease;
+            }
+
+            .tab-cont ul{
+                padding: 0;
+                margin-left: 0;
+            }
+
+            .tab-cont ul li {
+                font-size: 16px;
+                line-height: 32px;
+                font-weight: 400;
+                padding-left: 19px;
+                margin-bottom: 8px;
+                font-family: 'Montserrat', sans-serif;
+                color: #23242B;
+                margin: 0 0 10px;
+                list-style: none;
+                position: relative;
+            }
+            .tab-cont ul li::before {
+                position: absolute;
+                content: '';
+                width: 7px;
+                height: 7px;
+                left: 0;
+                display: block;
+                background-color: #23242b;
+                top: 13px;
+                border-radius: 50%;
+            }
+
+            .tab-nav li.active .content-holder{
+                display:block;
+            }
+            .content-holder{
+                position:absolute;
+                left:0;
+                right:0;
+                border:none;
+                padding:10px;
+                display:none;
+                color:#666;
+            }
+
+            /* Responsive  */
+            @media only screen and (max-width: 767px) {
+                .tabWrapper .tab-nav li .tab_btn{
+                    font-size: 15px;
+                    padding: 4px 10px 3px 10px;
+                }                
+            }
+
+            @media only screen and (max-width: 480px) {
+                .tabWrapper .tab-nav li .tab_btn {
+                    font-size: 13px;
+                    padding: 4px 3px 3px 4px;
+                }
+            }
+        </style>
+
+
+
+
+
+
+<style>
+
+
+
+
+
+
+</style>
+
+
+
+
+    </head>
+    <!-- Head : End  -->
+
+    <!-- Body : Begin  -->
+    <body>
+       
+
+
+        <!-- Tab: 3  -->
+        <section>
+            <div class="tab-col">
+
+                <div class="tabWrapper"> 
+  
+                    <!--Start Tabs Panel-->
+                    <div class="tab-panel">
+                        <ul class="tab-nav">
+                        <li>
+                            <span class="tab_btn">Home</span>
+                            <div class="content-holder">
+                                <div class="tab-cont">
+                                    <ul>
+                                        <li>Get a better erection, more easily, at any age.</li>
+                                        <li>Clinical-strength Acoustic Wave Therapy from the comfort of home.</li>
+                                        <li>Save time and money compared to in-clinic treatment.</li>
+                                    </ul>                                    
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="tab_btn">About Us</span>
+                            <div class="content-holder">About Us</div>
+                        </li>
+                        <li>
+                            <span class="tab_btn">Contact Us</span>
+                            <div class="content-holder">Contact Us</div>
+                        </li>
+                        </ul>
+                    </div>
+                    <!--End Tabs Panel--> 
+                </div>
+
+
+                
+            </div>
+            
+        </section>
+
+       
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+       
+
+
+
+
+
+
+
+<script>
+    $(document).ready(function() {
+        $('.tab-nav li').click(function() {
+            $('.tab-nav li.active').removeClass('active');
+            $(this).addClass('active');
+        });
+        $('.tab-nav li:first-child').addClass('active');
+    });
+</script>
+        
+    </body>
+    <!-- Body : End  -->
+</html>
