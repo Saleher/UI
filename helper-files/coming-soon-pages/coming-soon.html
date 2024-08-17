@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/coming-soon.css">
+</head>
+
+<body>
+
+    
+
+    
+
+    <section class="coming-soon">
+        <!-- particles.js container -->
+        <div id="particles-js"></div>
+        <div class="coming-soon-cont">
+            <!-- header begin  -->
+            <div class="c-header">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-6 exs-full-width">
+                            <div class="logo">
+                                <a href="#">
+                                    <img src="images/logo-white.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6 exs-full-width">
+                            <div class="pull-right header-right">
+                                <ul class="list-inline social-icons">
+                                    <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+            <!-- header end  -->
+            <!-- main section Begin  -->
+            <div class="main-content">
+                <div class="container text-center">
+                    <div class="tab-heading">
+                        <h1 class="primary-title">We are Coming Soon</h1>
+                        <p class="text-light">Our exciting new website is coming soon! Check back later...</p>
+                    </div>
+                    <div class="main-tab-body">
+                        <div class="countdown-timer ptb-50">
+                            <input name="count-down-date" id="count-down-date" type="hidden" value="25 Jan, 2022 12:00:00" />
+                            <!-- <h2 class="expired-text hidden">Welcome to Our Website</h2> -->
+                            <ul class="list-inline count-down-list" id="countdown-boxes">
+                                <li class="gray-bg-1" id="years" style="display: none;"><span class="years"></span><span>Years</span></li>
+                                <li class="gray-bg-1" id="months" style="display: none;"><span class="months"></span><span>Months</span></li>
+                                <li class="gray-bg-1" id="days" style=""><span class="days">1459</span><span>Days</span></li>
+                                <li class="gray-bg-1" id="hours" style=""><span class="hours">19</span><span>Hours</span></li>
+                                <li class="gray-bg-1" id="minutes" style=""><span class="minutes">01</span><span>Minutes</span></li>
+                                <li class="gray-bg-1" id="seconds"><span class="seconds">10</span><span>Seconds</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Main Section End  -->
+        </div>
+    </section>
+
+    <!-- Jquery-->
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="js/comingsoon-scripts.js"></script>
+
+    <script>
+        /* ---- particles.js config ---- */
+
+        particlesJS("particles-js", {
+        "particles": {
+            "number": {
+            "value": 380,
+            "density": {
+                "enable": true,
+                "value_area": 800
+            }
+            },
+            "color": {
+            "value": "#ffffff"
+            },
+            "shape": {
+            "type": "circle",
+            "stroke": {
+                "width": 0,
+                "color": "#000000"
+            },
+            "polygon": {
+                "nb_sides": 5
+            },
+            "image": {
+                "src": "img/github.svg",
+                "width": 100,
+                "height": 100
+            }
+            },
+            "opacity": {
+            "value": 0.5,
+            "random": false,
+            "anim": {
+                "enable": false,
+                "speed": 1,
+                "opacity_min": 0.1,
+                "sync": false
+            }
+            },
+            "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+                "enable": false,
+                "speed": 40,
+                "size_min": 0.1,
+                "sync": false
+            }
+            },
+            "line_linked": {
+            "enable": false,
+            "distance": 150,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 1
+            },
+            "move": {
+            "enable": true,
+            "speed": 6,
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+            }
+            }
+        },
+        "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+            "onhover": {
+                "enable": true,
+                "mode": "grab"
+            },
+            "onclick": {
+                "enable": true,
+                "mode": "push"
+            },
+            "resize": true
+            },
+            "modes": {
+            "grab": {
+                "distance": 140,
+                "line_linked": {
+                "opacity": 1
+                }
+            },
+            "bubble": {
+                "distance": 400,
+                "size": 40,
+                "duration": 2,
+                "opacity": 8,
+                "speed": 3
+            },
+            "repulse": {
+                "distance": 200,
+                "duration": 0.4
+            },
+            "push": {
+                "particles_nb": 4
+            },
+            "remove": {
+                "particles_nb": 2
+            }
+            }
+        },
+        "retina_detect": true
+        });
+
+
+    </script>
+
+
+</body>
+
+</html>
