@@ -1,0 +1,234 @@
+/*====================================
+[ Table of Contents ]
+=====================================
+:: Imports
+:: Fonts
+:: Variable 
+:: Globle
+:: Typography
+:: Titles
+:: Flex View
+:: Buttons
+:: Tags
+:: Container width
+:: Colors 
+:: Backgrounds
+:: Margins
+:: Paddings
+:: Custom Animation
+:: Header
+:: Banner
+
+====================================
+[ Table of Contents ]
+===================================*/
+
+
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+
+/*== Variable ==*/
+
+
+/*== Globle ==*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    font-weight: 400;
+    color: #2c2c2c;
+    font-size: 14px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    font-weight: 300;
+    color: #000;
+    font-size: 18px
+}
+
+._commonPadding {
+    padding-top: 60px;
+    padding-bottom: 60px
+}
+
+p {
+    font-size: 18px;
+    line-height: 25px;
+    font-family: Roboto, sans-serif;
+    margin: 0 0 10px 0;
+    font-weight: 400;
+    color: #222
+}
+
+p:last-child {
+    margin-bottom: 0
+}
+
+@keyframes _fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-25px, 0, 0)
+    }
+    to {
+        opacity: 1;
+        transform: none
+    }
+}
+
+._fadeInLeft {
+    animation-name: _fadeInLeft
+}
+
+@keyframes _fadeInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(25px, 0, 0)
+    }
+    to {
+        opacity: 1;
+        transform: none
+    }
+}
+
+._fadeInRight {
+    animation-name: _fadeInRight
+}
+
+@keyframes _fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 25px, 0)
+    }
+    to {
+        opacity: 1;
+        transform: none
+    }
+}
+
+._fadeInUp {
+    animation-name: _fadeInUp
+}
+
+@keyframes _fadeInbottom {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -25px, 0)
+    }
+    to {
+        opacity: 1;
+        transform: none
+    }
+}
+
+._fadeInbottom {
+    animation-name: _fadeInbottom
+}
+
+@keyframes _upDown {
+    0% {
+        transform: translateY(0)
+    }
+    25% {
+        transform: translateY(-10px)
+    }
+    75% {
+        transform: translateY(10px)
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
+
+._upDown {
+    -moz-animation: 1s ease 0s normal none infinite _upDown;
+    -webkit-animation: _upDown 5s infinite linear;
+    -ms-animation: 5s ease 0s normal none infinite _upDown;
+    -ms-animation: _upDown 5s infinite linear;
+    animation: 5s ease 0s normal none infinite _upDown;
+    animation: _upDown 5s infinite linear
+}
+
+@keyframes _leftRight {
+    0% {
+        transform: translateX(0)
+    }
+    25% {
+        transform: translateX(-10px)
+    }
+    75% {
+        transform: translateX(10px)
+    }
+    100% {
+        transform: translateX(0)
+    }
+}
+
+._leftRight {
+    -moz-animation: 1s ease 0s normal none infinite _leftRight;
+    -webkit-animation: _leftRight 5s infinite linear;
+    -ms-animation: 5s ease 0s normal none infinite _leftRight;
+    -ms-animation: _leftRight 5s infinite linear;
+    animation: 5s ease 0s normal none infinite _leftRight;
+    animation: _leftRight 5s infinite linear
+}
+
+@keyframes _scaleUpDown {
+    0% {
+        transform: scale(1) rotate(0)
+    }
+    25% {
+        transform: scale(1.2) rotate(0)
+    }
+    50% {
+        transform: scale(1.1) rotate(0)
+    }
+    75% {
+        transform: scale(1.2) rotate(0)
+    }
+    100% {
+        transform: scale(1) rotate(0)
+    }
+}
+
+._scaleUpDown {
+    -moz-animation: 20s ease 0s normal none infinite _scaleUpDown;
+    -webkit-animation: _scaleUpDown 10s infinite linear;
+    -ms-animation: 20s ease 0s normal none infinite _scaleUpDown;
+    -ms-animation: _scaleUpDown 10s infinite linear;
+    animation: 20s ease 0s normal none infinite _scaleUpDown;
+    animation: _scaleUpDown 20s infinite linear
+}
+
+@keyframes _withAnim {
+    0% {
+        width: 0%
+    }
+    100% {
+        width: 100%
+    }
+}
+
+._withAnim {
+    animation: 2.5s ease 0s normal none _withAnim;
+    animation: _withAnim 2.5s linear;
+    animation-fill-mode: forwards
+}
+
+/* Banner */
+
+._bannerSlider ._slider-img {
+    width: 100%;
+}
+
+
+/*# sourceMappingURL=style.css.map */

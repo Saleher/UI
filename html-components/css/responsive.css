@@ -1,0 +1,43 @@
+/* Responsive css */
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 1024px) {
+    .main_head .navbar-nav .clickD {
+        position: absolute;
+        right: -5px;
+        top: 50%;
+        width: 10px;
+        height: 5px;
+        border-top: 5px solid #fff;
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+        cursor: pointer;
+        display: block;
+        background-size: 10px;
+        z-index: 9999;
+        transform: translateY(-50%);
+    }
+    .main_head ul.navbar-nav li .clickD+.sub-menu {
+        opacity: 0;
+        visibility: hidden;
+    }
+    .main_head ul.navbar-nav li .clickD.toggled+.sub-menu {
+        position: absolute;
+        top: 100%;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media (max-width: 992) {}
+
+@media (max-width: 767px) {
+    .main_head .navbar-nav .clickD {
+        top: 25px;
+    }
+    .main_head ul.navbar-nav li .clickD.toggled+.sub-menu {
+        position: relative;
+        top: 100%;
+    }
+}
