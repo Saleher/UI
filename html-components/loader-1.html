@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Style : Mobile First  -->
+    <style>
+        /*========================================
+        ============ Loder Css ===========
+        ==========================================*/
+        
+
+        /* PRELOADER CSS */
+        .page-loader {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            background: rgba(255, 255, 255, 0.8);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            left: 0;
+            right:0;
+            z-index: 999999;
+        }  
+
+        .spinner1,
+        .spinner1:after {
+            border-radius: 50%;
+            width: 8em;
+            height: 8em;
+        }
+        .spinner1 {
+            margin: 60px auto;
+            font-size: 10px;
+            position: relative;
+            text-indent: -9999em;
+            border-top: 1.1em solid rgba(31, 115, 255, 0.2);
+            border-right: 1.1em solid rgba(31, 115, 255, 0.2);
+            border-bottom: 1.1em solid rgba(31, 115, 255, 0.2);
+            border-left: 1.1em solid #1f73ff;
+            -webkit-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-animation: spin 1.1s infinite linear;
+            animation: spin 1.1s infinite linear;
+        }
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- PAGE LOADER   -->
+    <div class="page-loader">
+        <div class="spinner1"></div>
+    </div>
+    <!-- PAGE LOADER END   -->
+ 
+    <!-- Begin: Header -->
+    <header class="_header">
+        
+    </header>
+    <!-- End: Header -->
+
+    <!-- Begin: Main -->
+    <main class="_main">
+        <div class="text-center" style="padding: 1450x 0;">
+            <h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, ad quos, dolorem ut deleniti facere vero corporis laudantium expedita exercitationem eius! Neque ipsa libero quidem corrupti esse nam, blanditiis itaque!
+            </h2>
+
+            <div class="p">
+                <div class="description">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ut sed omnis,<br> vitae natus nam laudantium ullam in, corrupti inventore distinctio! Odit <br>obcaecati fugit aut error at neque eaque perspiciatis?</p>
+                    et consectetur adipisicing elit. Quam ut sed omnis,<br> vitae natus nam laudantium ullam in, corrupti inventore distinctio! Odit <br>obcaecati fugit aut error at neque eaque perspiciatis?</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- End: Main -->
+
+    <!-- Jquery-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    
+      
+
+
+    <script>
+        $(window).on('load',function(){
+            setTimeout(function(){ // allowing 1.5 secs to fade out loader
+            $('.page-loader').fadeOut('slow');
+            },1500);
+        });
+    </script>
+
+
+
+
+    <script>
+          $('.description').each(function(){
+            if($(this).height() >= 200 ){
+                $(this).addClass('ellipsis');
+            }
+        });
+    </script>
+
+  
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Style : Mobile First  -->
+    <style>
+        /*========================================
+        ============ Style Begin ===========
+        ==========================================*/
+        /* Checkbox */
+        ._checkbox-label{
+            display: block;
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 30px;
+        }
+        ._checkbox-label > input {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+            filter: alpha(opacity=0);
+        }
+        ._checkbox-label > ._chSpan {
+            border: 2px solid #1ecfee;      
+            border-radius: 3px;
+            background: none;
+            position: absolute;
+            top: 1px;
+            left: 0;
+            height: 20px;
+            width: 20px;
+        }       
+        ._checkbox-label > ._chSpan:after {
+            content: '';
+            position: absolute;
+            display: none;
+            top: 50%;
+            left: 50%;
+            margin-left: -2px;
+            margin-top: -6px;
+            width: 5px;
+            height: 10px;
+            border-width: 0 2px 2px 0 !important;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            border: solid #000;
+        }
+        ._checkbox-label > input:checked ~ ._chSpan{
+            background-color: #1ecfee;     
+        }
+        ._checkbox-label > input:checked ~ ._chSpan:after {
+            display: block;           
+        }
+        /* Radio Box */
+        ._radiobox-label{
+            display: block;
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 30px;
+        }
+        ._radiobox-label > input {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+            filter: alpha(opacity=0);
+        }
+        ._radiobox-label > ._rdSpan {
+            display: inline-block;
+            border: 2px solid #1ecfee;    
+            background-color: #fff;   
+            border-radius: 50%!important;
+            border-radius: 3px;            
+            position: absolute;
+            top: 1px;
+            left: 0;
+            height: 20px;
+            width: 20px;
+        }
+        ._radiobox-label > ._rdSpan:after {
+            position: absolute;
+            content: "";
+            border: solid #1ecfee;
+            background: #1ecfee;
+            top: 50%;
+            left: 50%;
+            margin-left: -5px;
+            margin-top: -5px;
+            height: 10px;
+            width: 10px;
+            border-radius: 100% !important;
+            transition: transform 0.5s;
+            transform: scale(0);
+        }
+        ._radiobox-label > input:checked ~ ._rdSpan:after{
+            transform: scale(1);
+        }
+
+        /* Switch */
+        .m-switch {
+            display: inline-block;
+            font-size: 1rem;
+            position: relative;
+        }
+       .m-switch label {
+            font-weight: 400;
+            font-size: 1rem;
+            display: inline-block;
+            position: relative;
+        }
+        .m-switch input:empty {
+            margin-left: -999px;
+            height: 0;
+            width: 0;
+            overflow: hidden;
+            position: absolute;
+            opacity: 0;
+            filter: alpha(opacity=0);
+        }
+        .m-switch input:empty ~ span {
+            line-height: 30px;
+            margin: 2px 0;
+            height: 30px;
+            width: 57px;
+            border-radius: 15px;
+            display: inline-block;
+            position: relative;
+            float: left;
+            width: 1px;
+            text-indent: 0;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .m-switch input:empty ~ span:before, .m-switch input:empty ~ span:after {
+            position: absolute;
+            display: block;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            content: ' ';
+            -webkit-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+            width: 54px;
+            border-radius: 15px;
+            border: 2px solid #ebedf2;
+            -webkit-box-shadow: 0px 3px 20px 0px rgba(235, 237, 242, 0.41);
+            box-shadow: 0px 3px 20px 0px rgba(235, 237, 242, 0.41);
+        }
+        .m-switch input:empty ~ span:after {
+            height: 24px;
+            width: 24px;
+            line-height: 26px;
+            top: 3px;
+            bottom: 3px;
+            margin-left: 3px;
+            font-size: 0.9em;
+            text-align: center;
+            vertical-align: middle;          
+            background-color: #dfe2ea;
+        }
+        
+        .m-switch input:checked ~ span:after {
+            background-color: #34bfa3;
+            opacity: 1;
+            filter: alpha(opacity=100);
+            margin-left: 26px;
+        }
+
+        /*  Toggle Switch  */
+
+        .toggleSwitch span span {
+             display: none;
+        }
+        .toggleSwitch {
+            display: inline-block;
+            width: 120px;
+            height: 36px;
+            position: relative;
+            overflow: visible;
+            padding: 0;          
+            cursor: pointer;            
+        }
+        .toggleSwitch * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .toggleSwitch label,
+        .toggleSwitch > span {
+            line-height: 80px;
+            height: 20px;
+            vertical-align: middle;
+        }
+        .toggleSwitch input:focus ~ a,
+        .toggleSwitch input:focus + label {
+            outline: none;
+        }
+        .toggleSwitch label {
+            position: relative;
+            z-index: 3;
+            display: block;
+            width: 100%;
+        }
+        .toggleSwitch input {
+            position: absolute;
+            opacity: 0;
+            z-index: 5;
+        }
+        .toggleSwitch > span {
+            position: absolute;
+            left: -50px;
+            width: 100%;
+            margin: 0;
+            padding-right: 50px;
+            text-align: left;
+            white-space: nowrap;
+            height: 38px;
+            line-height: 37px;
+        }
+        .toggleSwitch > span span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 5;
+            display: block;
+            width: 50%;
+            margin-left: 50px;
+            text-align: left;
+            font-size: 0.9em;
+            width: 100%;
+            left: 15%;
+            top: -1px;
+            opacity: 0;
+        }
+        .toggleSwitch a {
+            position: absolute;
+            right: 50%;
+            z-index: 4;
+            display: block;
+            height: 100%;
+            padding: 0;
+            left: 2px;
+            width: 36px;
+            background-color: #fff;
+            border: 1px solid #CCC;
+            border-radius: 100%;
+            -webkit-transition: all 0.2s ease-out;
+            -moz-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        }
+        .toggleSwitch > span span:first-of-type {
+            color: #ccc;
+            opacity: 1;
+            left: 45%;
+        }
+        .toggleSwitch > span:before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 50px;
+            top: -1px;
+            background-color: #fafafa;
+            border: 1px solid #ccc;
+            border-radius: 30px;
+            -webkit-transition: all 0.2s ease-out;
+            -moz-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+        }
+        .toggleSwitch input:checked ~ a {
+            border-color: #fff;
+            left: 90px;
+            margin-left: -10px;
+        }
+        .toggleSwitch input:checked ~ span:before {
+            border-color: #0097D1;
+            box-shadow: inset 0 0 0 30px #0097D1;
+        }
+        .toggleSwitch input:checked ~ span span:first-of-type {
+            opacity: 0;
+        }
+        .toggleSwitch input:checked ~ span span:last-of-type {
+            opacity: 1;
+            color: #fff;
+        }
+
+
+        /********* Switch 3 **********/
+        .can-toggle {
+            position: relative;
+        }
+       
+        .can-toggle input[type="checkbox"] {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .can-toggle input[type="checkbox"][disabled] ~ label {
+            pointer-events: none;
+        }
+        .can-toggle input[type="checkbox"][disabled] ~ label .can-toggle__switch {
+            opacity: 0.4;
+        }
+        .can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:before {
+            content: attr(data-unchecked);
+            left: 10px;
+        }
+        .can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+            content: attr(data-checked);
+        }
+        .can-toggle label {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            position: relative;
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+        }
+        
+        .can-toggle label .can-toggle__switch {
+            position: relative;
+        }
+        .can-toggle label .can-toggle__switch:before {
+            content: attr(data-checked);
+            position: absolute;
+            top: 0;
+            text-transform: uppercase;
+            text-align: center;
+            left: 90px;
+            font-size: 14px;
+            line-height: 42px;
+            width: 67px;
+            padding: 0 12px;
+            color: #fff;
+        }
+        .can-toggle label .can-toggle__switch:after {
+            content: attr(data-unchecked);
+            position: absolute;
+            z-index: 5;
+            text-transform: uppercase;
+            text-align: center;
+            background: white;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+        .can-toggle input[type="checkbox"][disabled] ~ label {
+            color: rgba(119, 119, 119, 0.5);
+        }
+        /* .can-toggle input[type="checkbox"]:focus ~ label .can-toggle__switch, .can-toggle input[type="checkbox"]:hover ~ label .can-toggle__switch {
+        background-color: #777;
+        } */
+        .can-toggle input[type="checkbox"]:focus ~ label .can-toggle__switch:after, .can-toggle input[type="checkbox"]:hover ~ label .can-toggle__switch:after {
+        color: #5e5e5e;
+        }
+        .can-toggle input[type="checkbox"]:hover ~ label {
+        color: #6a6a6a;
+        }
+        .can-toggle input[type="checkbox"]:checked ~ label:hover {
+        color: #55bc49;
+        }
+       
+        .can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+        color: #4fb743;
+        }
+        .can-toggle input[type="checkbox"]:checked:focus ~ label .can-toggle__switch, .can-toggle input[type="checkbox"]:checked:hover ~ label .can-toggle__switch {
+        background-color: #5fc054;
+        }
+     
+        .can-toggle label .can-toggle__label-text {
+        -webkit-box-flex: 1;
+                flex: 1;
+        }
+        .can-toggle label .can-toggle__switch {
+        -webkit-transition: background-color 0.3s cubic-bezier(0, 1, 0.5, 1);
+        transition: background-color 0.3s cubic-bezier(0, 1, 0.5, 1);
+        background: #848484;
+        }
+       
+        .can-toggle label .can-toggle__switch:after {          
+            color: #777;
+            top: 1px;
+            left: 4px;
+            border-radius: 30px;
+            width: 85px;
+            line-height: 33px;
+            font-size: 14px;
+            border: 2px solid #1ecfee;
+        }
+      
+        .can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+            -webkit-transform: translate3d(80px, 0, 0);
+            transform: translate3d(80px, 0, 0);
+        }
+        
+        .can-toggle label {
+        font-size: 14px;
+        }
+        .can-toggle label .can-toggle__switch {
+            height: 40px;
+            -webkit-box-flex: 0;
+            flex: 0 0 170px;
+            border-radius: 30px;
+            -webkit-transition: background-color 0.3s ease-in-out;
+            transition: background-color 0.3s ease-in-out;
+            background: #ff00008a;
+        }
+     
+       
+        .can-toggle label .can-toggle__switch:hover:after {
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+        }
+        .can-toggle input[type="checkbox"] {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .can-toggle.demo-rebrand-1 input[type="checkbox"][disabled] ~ label {
+        color: rgba(181, 62, 116, 0.5);
+        }
+      
+       
+        .can-toggle.demo-rebrand-1 input[type="checkbox"]:checked ~ label:hover {
+        color: #39916a;
+        }
+        .can-toggle.demo-rebrand-1 input[type="checkbox"]:checked ~ label .can-toggle__switch {
+            background-color: #afd6e8;
+        }
+        .can-toggle.demo-rebrand-1 input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+        color: #368a65;
+        }
+        .can-toggle.demo-rebrand-1 label .can-toggle__switch:after {      
+        transition: transform 0.3s ease-in-out;
+        color: red;
+        }
+
+        /****** Custom File Upload ******/
+
+        ._fileUpload{
+            display:block;
+            text-align:center;
+            font-family: Helvetica, Arial, sans-serif
+            ;font-size: 12px;
+        }
+        ._fileUpload .file-select{
+            display:block;
+            border: 2px solid #dce4ec;
+            color: #34495e;cursor:pointer;
+            height:40px;line-height:40px;
+            text-align:left;
+            background:#FFFFFF;
+            overflow:hidden;
+            position:relative;
+        }
+        ._fileUpload .file-select .file-select-button{
+            background:#dce4ec;
+            padding:0 10px;
+            display:inline-block;
+            height:40px;
+            line-height:40px;
+        }
+        ._fileUpload .file-select .file-select-name{
+            line-height:40px;
+            display:inline-block;
+            padding:0 10px;
+        }
+        ._fileUpload .file-select:hover{border-color:#34495e;
+            transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;}
+        ._fileUpload .file-select:hover .file-select-button{background:#34495e;color:#FFFFFF;transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;}
+        ._fileUpload.active .file-select{border-color:#3fa46a;
+            transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;}
+        ._fileUpload.active .file-select .file-select-button{background:#3fa46a;color:#FFFFFF;transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;}
+        ._fileUpload .file-select input[type=file]{z-index:100;cursor:pointer;position:absolute;
+            height:100%;
+            width:100%;
+            top:0;
+            left:0;
+            opacity:0;
+            filter:alpha(opacity=0);
+        }
+        ._fileUpload .file-select.file-select-disabled{
+            opacity:0.65;
+        }
+        ._fileUpload .file-select.file-select-disabled:hover{
+            cursor:default;
+            display:block;
+            border: 2px solid #dce4ec;
+            color: #34495e;
+            cursor:pointer;
+            height:40px;
+            line-height:40px;
+            margin-top:5px;
+            text-align:left;
+            background:#FFFFFF;
+            overflow:hidden;
+            position:relative;
+        }
+        ._fileUpload .file-select.file-select-disabled:hover .file-select-button{background:#dce4ec;
+            color:#666666;padding:0 10px;display:inline-block;height:40px;line-height:40px;}
+        ._fileUpload .file-select.file-select-disabled:hover .file-select-name{line-height:40px
+            ;display:inline-block;
+            padding:0 10px;}
+        /*========================================
+        ============ Style End  ===========
+        ==========================================*/
+        
+    </style>
+</head>
+
+<body>
+    <!-- Begin: Main -->
+    <main class="_main">
+        <!-- Begin :  Banner -->
+        <section class="_bannerSlider">
+            <div class="owl-carousel owl-theme" id="bannerSlider">
+                <!-- item begin -->
+                <div class="item">
+                    <img src="images/img-4.jpg" alt="Banner" class="_slider-img" style="height:300px;width:100%;object-fit: cover;">
+                </div>
+                <!-- item end -->
+            </div>
+        </section>
+        <!-- End   :  Banner -->
+
+        <!-- Begin:  Section-->
+        <section class="" style="padding: 45px 0;">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: 30px;">
+                    <h1>Custom Inputs</h1>
+                </div>
+                <!-- Div : Begin -->
+                <div class="row">
+                    <div class="col-md-6 col-lg-4" style="margin-bottom: 30px;">
+                        <!--begin::Form-->
+                        <form class="_m-form">
+                            <div class="form-group">
+                                <h4 style="margin-bottom: 25px;">Checkboxes 1</h4>
+                                <div class="_checkbox-list">
+                                    <label class="_checkbox-label">
+                                        <input type="checkbox"> Check 1
+                                        <span class="_chSpan"></span>
+                                    </label>
+                                    <label class="_checkbox-label">
+                                        <input type="checkbox"> Check 2
+                                        <span class="_chSpan"></span>
+                                    </label>
+                                    <label class="_checkbox-label">
+                                        <input type="checkbox" checked="checked"> Check 3
+                                        <span class="_chSpan"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                        <!--end::Form-->
+                    </div>
+                    <div class="col-md-6 col-lg-4" style="margin-bottom: 30px;">
+                        <!--begin::Form-->
+                        <form class="_m-form">
+                            <div class="form-group">
+                                <h4 style="margin-bottom: 25px;">Radiobox</h4>
+                                <div class="_radiobox-list">
+                                    <label class="_radiobox-label">
+                                        <input type="radio" name="radio-1"  checked="checked"> Check 1
+                                        <span class="_rdSpan"></span>
+                                    </label>
+                                    <label class="_radiobox-label">
+                                        <input type="radio" name="radio-1"> Check 2
+                                        <span class="_rdSpan"></span>
+                                    </label>
+                                    <label class="_radiobox-label">
+                                        <input type="radio" name="radio-1"> Check 3
+                                        <span class="_rdSpan"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                        <!--end::Form-->
+                    </div>
+                    <div class="col-md-6 col-lg-4" style="margin-bottom: 30px;">
+                        <!--begin::Form-->
+                        <form class="_m-form">
+                            <h4 style="margin-bottom: 25px;">Switch</h4>
+                            <div class="form-group row" style="margin-bottom: 15px;">
+                                <label class="col-3 col-form-label">Success</label>
+                                <div class="col-3">
+                                    <span class="m-switch">
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="">
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="form-group row" style="margin-bottom: 15px;">
+                                <label class="col-3 col-form-label">Before/After</label>
+                                <div class="col-3">
+                                    <label class="toggleSwitch xlarge" onclick="">
+                                        <input type="checkbox" />
+                                        <span>
+                                            <span>Before</span>
+                                            <span>After</span>                                           
+                                        </span>
+                                        <a></a>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="can-toggle demo-rebrand-1">
+                                    <input id="d" type="checkbox">
+                                    <label for="d">
+                                        <div class="can-toggle__switch" data-checked="After" data-unchecked="Before"></div>                                     
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                        <!--end::Form-->
+                    </div>
+                    <div class="col-md-6 col-lg-4" style="margin-bottom: 30px;">
+                        <h4 style="margin-bottom: 25px;">Custom File Upload</h4>
+                        <div class="_fileUpload">
+                            <div class="file-select">
+                              <div class="file-select-button" id="fileName">Choose File</div>
+                              <div class="file-select-name" id="noFile">No file chosen...</div> 
+                              <input type="file" name="chooseFile" id="chooseFile">
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <!-- Div : End -->
+            </div>
+        </section>
+        <!-- End  :  Section-->
+
+    </main>
+    <!-- End: Main -->
+
+    <!-- Jquery-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!--- Custom File Uplaod Jquary ---->
+   <script>
+       $('#chooseFile').bind('change', function () {
+            var filename = $("#chooseFile").val();
+            if (/^\s*$/.test(filename)) {
+                $(".file-upload").removeClass('active');
+                $("#noFile").text("No file chosen..."); 
+            }
+            else {
+                $(".file-upload").addClass('active');
+                $("#noFile").text(filename.replace("C:\\fakepath\\", "")); 
+            }
+        });
+   </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+    <!-- Style : Mobile First  -->
+    <style>
+        ._bannerSlider .item img{
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        /*===============================================
+        ============== Accordian Css Begin  =============
+        ===============================================*/
+        .p-60 {
+            padding: 60px 0;
+        }
+        
+        .faq-img img {
+            margin-left: -160px;
+        }
+        
+        .faq-box .btn-link {
+            font-weight: 400;
+            color: #0f1328;
+            background-color: #f8f7ff;
+            display: block;
+            font-size: 16px;
+            padding: 15px 70px;
+            border: 0;
+            text-decoration: none;
+            line-height: 28px;
+        }
+        
+        .faq-box ._card-header {
+            padding: 0;
+            border-bottom: 0;
+            background: none;
+            border-radius: 0;
+        }
+        
+        .faq-box ._card {
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 0;
+            border-radius: 0;
+            background: #F8F7FF;
+            margin-bottom: 20px;
+        }
+        
+        .faq-box ._card-body {
+            -webkit-box-flex: 1;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            padding: 0px 70px;
+            padding-bottom: 20px;
+        }
+        
+        .faq-box ._card-body p {
+            margin: 0;
+            font-size: 14px;
+        }
+        
+        .faq-box .btn-link.collapsed::before {
+            content: "+";
+        }
+        
+        .faq-box .btn-link::before {
+            content: "-";
+            line-height: 30px;
+            position: absolute;
+            left: 30px;
+            top: 13px;
+            font-size: 24px;
+            font-size: 20px;
+        }
+        /*===============================================
+        ============== Accordian Css End  =================
+        ===============================================*/
+    </style>
+</head>
+
+<body>
+
+    <!-- Begin: Main -->
+    <main class="_main">
+        <!-- Begin :  Banner -->
+        <section class="_bannerSlider">
+            <!-- item begin -->
+            <div class="item">
+                <img src="images/img-4.jpg" alt="Banner" class="_slider-img img-responsive" style="height: 350px;width: 100%;object-fit: cover;">
+            </div>
+            <!-- item end -->
+        </section>
+        <!-- End   :  Banner -->
+
+        <!-- Begin:  Section-->
+        <section class="_accordianSec" style="padding: 60px 0;">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h1 style="margin-bottom: 40px;">FAQ</h1>
+                </div>
+                <!-- Accordian Section : Begin  -->
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="faq-box">
+                            <div id="accordion" class="mt-40">
+                                <div class="_card">
+                                    <div class="_card-header" id="headingOne">
+                                        <h5 class="mb-0">
+                                            <a href="#" class="btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+												How To Get Start With Us?
+											</a>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                        <div class="_card-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quinostrud exercitation.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_card">
+                                    <div class="_card-header" id="headingTwo">
+                                        <h5 class="mb-0">
+                                            <a href="#" class="btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+												Why Choose Our Services In Your Busines
+											</a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                        <div class="_card-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quinostrud exercitation.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_card">
+                                    <div class="_card-header" id="headingThree">
+                                        <h5 class="mb-0">
+                                            <a href="#" class="btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+												We Are The Best For Your Company
+											</a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                        <div class="_card-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quinostrud exercitation.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_card">
+                                    <div class="_card-header" id="headingFour">
+                                        <h5 class="mb-0">
+                                            <a href="#" class="btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+												We Provide Best Service For Agency
+											</a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                        <div class="_card-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quinostrud exercitation.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="faq-box mb-30">
+                            <div id="accordion1" class="mt-40">
+                                <div class="_card">
+                                    <div class="_card-header" id="headingOne1">
+                                        <h5 class="mb-0">
+                                            <a href="#" class="btn-link" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne">
+												How To Get Start With Us?
+											</a>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseOne1" class="collapse show" aria-labelledby="headingOne1" data-parent="#accordion1">
+                                        <div class="_card-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quinostrud exercitation.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_card">
+                                    <div class="_card-header" id="headingTwo1">
+                                        <h5 class="mb-0">
+                                            <a href="#" class="btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">
+												Why Choose Our Services In Your Busines
+											</a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseTwo1" class="collapse" aria-labelledby="headingTwo1" data-parent="#accordion1">
+                                        <div class="_card-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quinostrud exercitation.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_card">
+                                    <div class="_card-header" id="headingThree1">
+                                        <h5 class="mb-0">
+                                            <a href="#" class="btn-link collapsed" data-toggle="collapse" data-target="#collapseThree1" aria-expanded="false" aria-controls="collapseThree1">
+												We Are The Best For Your Company
+											</a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseThree1" class="collapse" aria-labelledby="headingThree1" data-parent="#accordion1">
+                                        <div class="_card-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quinostrud exercitation.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_card">
+                                    <div class="_card-header" id="headingFour1">
+                                        <h5 class="mb-0">
+                                            <a href="#" class="btn-link collapsed" data-toggle="collapse" data-target="#collapseFour1" aria-expanded="false" aria-controls="collapseFour">
+												We Provide Best Service For Agency
+											</a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseFour1" class="collapse" aria-labelledby="headingFour1" data-parent="#accordion1">
+                                        <div class="_card-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quinostrud exercitation.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Accordian Section : End    -->
+            </div>
+        </section>
+        <!-- End  :  Section-->
+
+    </main>
+    <!-- End: Main -->
+
+    <!-- Jquery-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/custom.js"></script>
+
+  
+
+
+</body>
+
+</html>

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <!--  fancyBox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" type="text/css" media="screen" />
+
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+    <!-- Style : Mobile First  -->
+    <style>
+        ._bannerSlider .item img{
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        /*========================================
+        =========================   Gallery Css Begin    ===========
+        ==========================================*/
+        
+        ._isoGal-menu {
+            margin-bottom: 25px;
+            overflow-y: scroll;
+        }
+        
+        ._isoGal-menu ul {
+            display: flex;
+            justify-content: flex-start;
+            width: 615px;
+        }
+        
+        ._isoGal-menu ul li {
+            list-style: none;
+            font-size: 15px;
+            color: #000;
+            padding: 10px 15px;
+            border: 2px solid #fff;
+            cursor: pointer;
+        }
+        
+        ._isoGal-menu ul li.active {
+            border-color: #8800fd;
+        }
+        
+        ._isoGal-menu ul li a {
+            display: block;
+            color: #000;
+        }
+        
+        ._portfolio-item {
+            margin-right: -5px;
+            margin-left: -5px;
+        }
+        
+        ._portfolio-item>div {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        
+        ._portfolio-item figure {
+            margin: 0;
+        }
+        
+        ._portfolio-item .item {
+            margin-bottom: 10px;
+        }
+        
+        ._isoFig {
+            position: relative;
+            overflow: hidden;
+            height: 280px;
+        }
+        
+        ._isoFig-cap {
+            position: absolute;
+            bottom: 0;
+            background: #8800fd;
+            width: 100%;
+            left: 0;
+            color: #fff;
+            padding: 12px 15px;
+            text-align: center;
+            transition: transform 0.5s;
+            transform: translateY(100%);
+        }
+        
+        ._isoFig:hover ._isoFig-cap {
+            transform: translateY(0%);
+        }
+        
+        ._isoFig-cap p {
+            color: #fff;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        
+        ._img-popup {
+            position: relative;
+            display: block;
+            cursor: pointer;
+            height: 100%;
+        }
+        
+        ._img-popup img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        ._img-popup:before {
+            position: absolute;
+            content: "";
+            height: calc(100% - 50px);
+            width: 100%;
+            background: rgba(0, 0, 0, 0.4) url(images/magify-icon.png) no-repeat center;
+            background-size: 60px;
+            transition: all 0.5s;
+            transform: scale(0.5);
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        ._isoFig:hover ._img-popup:before {
+            transform: scale(1);
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        ._iso-projectSection ._iso-keyResult-div:before {
+            background: url(../images/file-patternt.png) no-repeat;
+            background-position: right top;
+        }
+        
+        ._galleryModal {
+            height: 100%;
+        }
+        
+        ._galleryModal .modal-body {
+            padding: 10px;
+        }
+        
+        ._galleryModal .modal-dialog {
+            width: 900px;
+            max-width: 100%;
+        }
+        
+        ._galleryModal-2 .modal-dialog {
+            width: 600px;
+            max-width: 90%;
+        }
+        
+        ._galleryModal .close {
+            height: 35px;
+            width: 35px;
+            background: #8800fd;
+            opacity: 1;
+            color: #fff;
+            position: absolute;
+            border-radius: 100%;
+            top: -15px;
+            right: -15px;
+            z-index: 3;
+        }
+        
+        ._galleryModal .close img {
+            width: 12px;
+        }
+        
+        ._galleryModal .close:focus {
+            outline: none;
+            box-shadow: none;
+        }
+        
+        ._galleryModal .close img {
+            max-width: 18px;
+        }
+        
+        ._galleryModal .modal-dialog,
+        .modal.fade._galleryModal .modal-dialog {
+            top: 50%;
+            left: 50%;
+            right: auto;
+            bottom: auto;
+            margin: 0;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        
+        ._modal-img {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+        }
+        
+        ._galleryModal .modal-footer {
+            justify-content: center;
+        }
+        
+        ._galleryModal .modal-footer .btn {
+            height: 40px;
+            width: 40px;
+            border-radius: 100%;
+            line-height: 26px;
+            background: #8800fd;
+        }
+        
+        #image-gallery-caption {
+            font-size: 18px;
+            color: #959595;
+            font-weight: 600;
+        }
+        
+        .modal-footer> :not(:last-child) {
+            margin-right: 10px;
+        }
+        
+        .modal-footer> :not(:first-child) {
+            margin-left: 10px;
+        }
+        
+        ._left-btn-div,
+        ._right-btn-div {
+            width: 50px;
+            text-align: center;
+        }
+        
+        ._galleryModal .modal-footer .btn.btn-primary {
+            background-color: #8800fd;
+            border-color: #8800fd;
+        }
+        
+        ._galleryModal .modal-footer .btn:focus {
+            outline: none;
+            box-shadow: none !important;
+        }
+        
+        ._galleryModal .modal-footer .btn img {
+            width: 14px;
+        }
+        
+        @media (min-width: 768px) {
+            ._isoGal-menu {
+                overflow-y: unset;
+            }
+            ._isoGal-menu ul {
+                justify-content: center;
+                width: auto;
+            }
+        }
+        
+        @media (min-width: 1200px) {
+            ._isoGal-menu {
+                margin-bottom: 45px;
+            }
+            ._isoGal-menu ul li {
+                font-size: 18px;
+                padding: 10px 20px;
+            }
+        }
+        /*========================================
+        ============   ===========Gallery Css Emd  =================
+        =========================*/
+    </style>
+</head>
+
+<body>
+
+    <!-- Begin: Main -->
+    <main class="_main">
+        <!-- Begin :  Banner -->
+        <section class="_bannerSlider">
+            <!-- item begin -->
+            <div class="item">
+                <img src="images/banner-img-1.png" alt="Banner" class="_slider-img img-responsive">
+            </div>
+            <!-- item end -->
+        </section>
+        <!-- End   :  Banner -->
+
+        <!-- Begin:  Section-->
+        <section class="_isotopeSec" style="padding: 60px 0;">
+            <div class="container">
+                <!-- Portfolio : Begin  -->
+                <div class="_iosotopeGal">
+                    <!--  Gallery Nav -->
+                    <div class="_portfolio-menu _isoGal-menu">
+                        <ul>
+                            <li class="active" data-filter="*">All Categories </li>
+                            <li data-filter=".web">Web Design</li>
+                            <li data-filter=".branding">Branding</li>
+                            <li data-filter=".mockup">Mockups</li>
+                            <li data-filter=".photography">Photography</li>
+                        </ul>
+                    </div>
+                    <!-- Items -->
+                    <div class="row _portfolio-item mockup ">
+                        <!--- Col : Begin  -->
+                        <div class="col-md-6 col-lg-4 item web">
+                            <figure class="_isoFig">
+                                <a class="_img-popup" href="#" data-image-id="" data-toggle="modal" data-caption="Image 1" data-image="images/img-1.jpg" data-target="#image-gallery">
+                                    <img src="images/img-1.jpg" alt="" class="img-fluid">
+                                </a>
+                                <div class="_isoFig-cap">
+                                    <p>Business Card</p>
+                                </div>
+                            </figure>
+                        </div>
+                        <!--- Col : End   -->
+                        <!--- Col : Begin  -->
+                        <div class="col-md-6 col-lg-4 item web branding">
+                            <figure class="_isoFig">
+                                <a class="_img-popup" href="#" data-image-id="" data-toggle="modal" data-caption="Image 2" data-image="images/img-2.jpg" data-target="#image-gallery">
+                                    <img src="images/img-2.jpg" alt="" class="img-fluid">
+                                </a>
+                                <div class="_isoFig-cap">
+                                    <p>Business Card</p>
+                                </div>
+                            </figure>
+                        </div>
+                        <!--- Col : End   -->
+                        <!--- Col : Begin  -->
+                        <div class="col-md-6 col-lg-4 item web branding mockup">
+                            <figure class="_isoFig">
+                                <a class="_img-popup" data-image-id="" data-toggle="modal" data-caption="Image 3" data-image="images/img-1.jpg" data-target="#image-gallery">
+                                    <img src="images/img-1.jpg" alt="" class="img-fluid">
+                                </a>
+                                <div class="_isoFig-cap">
+                                    <p>Business Card</p>
+                                </div>
+                            </figure>
+                        </div>
+                        <!--- Col : End   -->
+                        <!--- Col : Begin  -->
+                        <div class="col-md-6 col-lg-4 item web">
+                            <figure class="_isoFig">
+                                <a class="_img-popup" data-image-id="" data-toggle="modal" data-caption="Image 4" data-image="images/img-1.jpg" data-target="#image-gallery">
+                                    <img src="images/img-1.jpg" alt="" class="img-fluid">
+                                </a>
+                                <div class="_isoFig-cap">
+                                    <p>Business Card</p>
+                                </div>
+                            </figure>
+                        </div>
+                        <!--- Col : End   -->
+                        <!--- Col : Begin  -->
+                        <div class="col-md-6 col-lg-4 item web branding photography">
+                            <figure class="_isoFig">
+                                <a class="_img-popup" data-image-id="" data-toggle="modal" data-caption="Image 5" data-image="images/img-5.jpg" data-target="#image-gallery">
+                                    <img src="images/img-5.jpg" alt="" class="img-fluid">
+                                </a>
+                                <div class="_isoFig-cap">
+                                    <p>Business Card</p>
+                                </div>
+                            </figure>
+                        </div>
+                        <!--- Col : End   -->
+                        <!--- Col : Begin  -->
+                        <div class="col-md-6 col-lg-4 item web photography">
+                            <figure class="_isoFig">
+                                <a class="_img-popup" data-image-id="" data-toggle="modal" data-caption="Image 6" data-image="images/img-6.jpg" data-target="#image-gallery">
+                                    <img src="images/img-6.jpg" alt="" class="img-fluid">
+                                </a>
+                                <div class="_isoFig-cap">
+                                    <p>Business Card</p>
+                                </div>
+                            </figure>
+                        </div>
+                        <!--- Col : End   -->
+                    </div>
+                </div>
+                <!-- Portfolio : End    -->
+            </div>
+        </section>
+        <!-- End  :  Section-->
+
+    </main>
+    <!-- End: Main -->
+
+    <!-- Jquery-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/wow.js"></script>
+    <!-- Fancy Box Js  -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <script src="js/custom.js"></script>
+
+
+
+    <!---- Isotope galler  --->
+    <script>
+        // Isotop Gallery
+        $(window).on('load', function() {
+            $('._portfolio-item').isotope(function() {
+                itemSelector: '.item'
+            });
+            $('._portfolio-menu ul li').click(function() {
+                $('._portfolio-menu ul li').removeClass('active');
+                $(this).addClass('active');
+                var selector = $(this).attr('data-filter');
+                $('._portfolio-item').isotope({
+                    filter: selector
+                })
+                return false;
+            });
+        });
+    </script>
+
+    <!-- Fancy Box  -->
+    <script>
+        // $(document).ready(function() {
+        //     // add all to same gallery
+        //     $(".branding a").attr("data-fancybox","mygallery");
+        //     // assign captions and title from alt-attributes of images:
+        //     $(".branding a").each(function(){
+        //         $(this).attr("data-caption", $(this).find("img").attr("alt"));
+        //         $(this).attr("title", $(this).find("img").attr("alt"));
+        //     });
+        //     // start fancybox:
+        //     $(".branding a").fancybox();
+        // });
+    </script>
+
+
+</body>
+
+</html>

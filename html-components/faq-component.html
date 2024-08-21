@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Style : Mobile First  -->
+    <style>
+        /*========================================
+        ============ Faq styleBegin ===========
+        ==========================================*/
+        
+        ._faq-header {
+            display: flex;
+            align-items: center;
+        }
+        
+        ._faq-header:not(:last-child) {
+            margin-bottom: 45px;
+        }
+        
+        ._faq-header ._title-1 {
+            margin: 0;
+            width: 200px;
+            min-width: 520px;
+            position: relative;
+            margin-right: 25px;
+            color: #000;
+        }
+        
+        ._faq-header ._title-1:before {
+            position: absolute;
+            content: "";
+            height: 70px;
+            width: 5px;
+            background: #1459b4;
+            top: -23px;
+            right: 0;
+        }
+        
+        ._faqWrapper .card {
+            margin-bottom: 20px;
+            border: 1px solid #d5e0f5;
+            overflow: hidden;
+            border-radius: 5px;
+            position: relative;
+            border-radius: 0;
+        }
+        
+        ._faqWrapper .card-header {
+            background: #fff;
+            border: none;
+            padding: 0;
+        }
+        
+        ._f-header a {
+            display: block;
+            width: 100%;
+            padding: 10px 35px 10px 15px;
+        }
+        
+        ._f-heading {
+            display: block;
+            font-size: 15px;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            color: #131313;
+        }
+        
+        ._f-heading>span {
+            display: inline-block;
+            padding-right: 5px;
+        }
+        
+        ._cardOpen ._f-heading {
+            font-weight: 700;
+        }
+        
+        ._faqWrapper .card-body {
+            padding: 0 25px 15px 15px;
+            font-size: 14px;
+            line-height: 25px;
+            color: #515151;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        ._cardOpen.card {
+            box-shadow: 6.395px 2.847px 6.5px rgba(0, 0, 0, 0.09);
+        }
+        
+        ._f-header ._icon {
+            height: 18px;
+            width: 12px;
+            background: url(images/faq-icon-1.png) no-repeat;
+            background-size: auto;
+            left: auto;
+            display: inline-block;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            transition: transform 0.5s;
+        }
+        
+        ._f-header a[aria-expanded="true"] ._icon {
+            transform: rotate(90deg);
+        }
+        
+        ._f-header:hover a {
+            text-decoration: none;
+        }
+        /* Responsive css */
+        
+        @media (min-width: 992px) {
+            ._f-header a {
+                padding: 20px 60px 20px 35px;
+            }
+            ._f-header ._icon {
+                top: 25px;
+                right: 30px;
+            }
+            ._f-heading {
+                font-size: 18px;
+            }
+            ._faqWrapper .card:before {
+                width: 7px;
+            }
+            ._f-header ._icon {
+                top: 25px;
+                right: 30px;
+            }
+            ._faqWrapper .card-body {
+                padding: 0 60px 25px 35px;
+                font-size: 15px;
+            }
+        }
+        /*========================================
+        ============ Faq styleEnd  ===========
+        ==========================================*/
+    </style>
+</head>
+
+<body>
+
+    <!-- Begin: Main -->
+    <main class="_main">
+        <!-- Begin :  Banner -->
+        <section class="_bannerSlider">
+            <div class="owl-carousel owl-theme" id="bannerSlider">
+                <!-- item begin -->
+                <div class="item">
+                    <img src="images/banner-img-1.png" alt="Banner" class="_slider-img">
+                </div>
+                <!-- item end -->
+            </div>
+        </section>
+        <!-- End   :  Banner -->
+
+        <!-- Begin:  Section-->
+        <section class="" style="padding: 45px 0;">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: 30px;">
+                    <h1>FAQ</h1>
+                </div>
+                <!-- Faq : Begin -->
+                <div class="_faqWrapper">
+                    <div id="faqID" class="accordion accordion-connected">
+                        <!-- Div : Begin -->
+                        <div class="card _cardOpen">
+                            <div class="card-header" id="heading-1">
+                                <div class="_f-header">
+                                    <a data-toggle="collapse" href="#collapse-1-1" aria-expanded="false" class="collapsed">
+                                        <span class="_icon"></span>
+                                        <span class="_f-heading"><span class="_theme-blue-1">1.</span> Wsed do eiusmod tempor incididunt ut labor?</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="collapse-1-1" class="collapse" aria-labelledby="heading-1" data-parent="#faqID" style="">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Div : Begin -->
+                        <div class="card">
+                            <div class="card-header" id="heading-2">
+                                <div class="_f-header">
+                                    <a data-toggle="collapse" href="#collapse-1-2" aria-expanded="false" class="collapsed">
+                                        <span class="_icon"></span>
+                                        <span class="_f-heading"><span class="_theme-blue-1">2.</span> How can I make a change to my application?</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="collapse-1-2" class="collapse" aria-labelledby="heading-2" data-parent="#faqID" style="">
+                                <div class="card-body">
+
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Div : Begin -->
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <div class="_f-header">
+                                    <a data-toggle="collapse" href="#collapse-1-3" aria-expanded="true">
+                                        <span class="_icon"></span>
+                                        <span class="_f-heading"><span class="_theme-blue-1">3.</span> Where can I find out about funding?</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="collapse-1-3" class="collapse show" aria-labelledby="headingThree" data-parent="#faqID" style="">
+
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Div : Begin -->
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <div class="_f-header">
+                                    <a data-toggle="collapse" href="#collapse-1-4">
+                                        <span class="_icon"></span>
+                                        <span class="_f-heading"><span class="_theme-blue-1">4.</span> Where can I find out about funding?</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div id="collapse-1-4" class="collapse" aria-labelledby="headingFour" data-parent="#faqID">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Div : Begin -->
+                        <div class="card">
+                            <div class="card-header" id="heading-5">
+                                <div class="_f-header">
+                                    <a data-toggle="collapse" href="#collapse-1-5">
+                                        <span class="_icon"></span>
+                                        <span class="_f-heading"><span class="_theme-blue-1">5.</span> What will happen when I’ve sent my application?</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div id="collapse-1-5" class="collapse" aria-labelledby="heading-5" data-parent="#faqID">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Div : Begin -->
+                        <div class="card">
+                            <div class="card-header" id="heading-6">
+                                <div class="_f-header">
+                                    <a data-toggle="collapse" href="#collapse-1-6">
+                                        <span class="_icon"></span>
+                                        <span class="_f-heading"><span class="_theme-blue-1">6.</span>Can I get a free trial before I purchase?</span>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div id="collapse-1-6" class="collapse" aria-labelledby="headingFour" data-parent="#faqID">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Faq : End -->
+            </div>
+        </section>
+        <!-- End  :  Section-->
+
+    </main>
+    <!-- End: Main -->
+
+    <!-- Jquery-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script>
+        $('.accordion .card').on('click', function() {
+            $(this).toggleClass('_cardOpen').siblings().removeClass('_cardOpen');
+        });
+    </script>
+
+    <script>
+        if ($(window).width() < 1024.5) {
+            $('.tab').removeClass('active');
+        }
+    </script>
+
+
+</body>
+
+</html>

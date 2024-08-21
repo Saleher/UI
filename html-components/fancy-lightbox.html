@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+     <!-- CSS -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/animate.min.css">
+     <link rel="stylesheet" href="css/owl.carousel.min.css">
+     <link rel="stylesheet" href="css/slick.css">
+     <link rel="stylesheet" href="css/slick-theme.css">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/responsive.css">
+    
+
+
+    <!--  fancyBox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" type="text/css" media="screen" />
+
+
+    <!-- Style : Mobile First  -->
+    <style>
+        .c-padding{
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        ._galCol{
+            margin-bottom: 30px;
+        }
+
+        ._figure img{
+           height: 250px;
+           width: 100%;
+           object-fit: cover;
+         }
+        
+    </style>
+</head>
+
+<body>
+   
+  
+
+    <!-- Begin: Main -->
+    <main class="_main">
+        <!-- Begin :  Banner -->
+        <section class="_bannerSlider">
+            <div class="owl-carousel owl-theme" id="bannerSlider">
+                <!-- item begin -->
+                <div class="item">
+                    <img src="images/banner-img-1.png" alt="Banner" class="_slider-img">
+                </div>
+                <!-- item end -->
+            </div>
+        </section>
+        <!-- End   :  Banner -->
+
+        <!-- Begin:  Section-->
+        <section class="sec-2 c-padding">
+            <div class="container">
+                <div class="image_gallery_wrapper">
+                    <div class="row fancy_gallery">
+                        <!-- Col : Begin  -->
+                        <div class="col-md-4 _galCol">
+                            <a href="images/img-1.jpg" class="_figure">
+                                <img src="images/img-1.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <!-- Col : Begin  -->
+                        <div class="col-md-4 _galCol">
+                            <a href="images/img-2.jpg" class="_figure">
+                                <img src="images/img-2.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <!-- Col : Begin  -->
+                        <div class="col-md-4 _galCol">
+                            <a href="images/img-3.jpg" class="_figure">
+                                <img src="images/img-3.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <!-- Col : Begin  -->
+                        <div class="col-md-4 _galCol">
+                            <a href="images/img-4.jpg" class="_figure">
+                                <img src="images/img-4.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <!-- Col : Begin  -->
+                        <div class="col-md-4 _galCol">
+                            <a href="images/img-1.jpg" class="_figure">
+                                <img src="images/img-5.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <!-- Col : Begin  -->
+                        <div class="col-md-4 _galCol">
+                            <a href="images/img-1.jpg" class="_figure">
+                                <img src="images/img-1.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End  :  Section-->
+
+    </main>
+    <!-- End: Main -->
+
+    <!-- Jquery-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/custom.js"></script>
+
+
+    <!-- Fancy Box Js  -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // add all to same gallery
+            $(".fancy_gallery a").attr("data-fancybox","mygallery");
+            // assign captions and title from alt-attributes of images:
+            $(".fancy_gallery a").each(function(){
+                $(this).attr("data-caption", $(this).find("img").attr("alt"));
+                $(this).attr("title", $(this).find("img").attr("alt"));
+            });
+            // start fancybox:
+            $(".fancy_gallery a").fancybox();
+        });
+    </script>
+
+</body>
+
+</html>

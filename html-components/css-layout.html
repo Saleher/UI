@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Style : Mobile First  -->
+    <style>
+        /*========================================
+        ============ Header Css Begin ===========
+        ==========================================*/
+        
+        ._header {
+            background: #da5e5e;
+            padding: 10px 0;
+        }
+        
+        .logo a {
+            color: #fff;
+        }
+        
+        .navbar {
+            padding: 0;
+        }
+        
+        .navbar-toggler-icon {
+            height: auto;
+        }
+        
+        .navbar-toggler-icon:focus,
+        .navbar-toggler:focus {
+            outline: none;
+            box-shadow: none;
+        }
+        
+        .navbar-toggler-icon .bar {
+            height: 3px;
+            width: 30px;
+            background: #fff;
+            margin-bottom: 5px;
+        }
+        
+        .navbar-toggler-icon .bar:last-child {
+            margin-bottom: 0;
+        }
+        
+        .change .bar-1 {
+            -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+        
+        .change .bar-2 {
+            opacity: 0;
+        }
+        
+        .change .bar-3 {
+            -webkit-transform: rotate(45deg) translate(-5px, -7px);
+            transform: rotate(45deg) translate(-5px, -7px);
+        }
+        
+        ._mob-menu-hdr {
+            display: block;
+            padding: 10px 15px;
+            background: #094796;
+            color: #fff;
+            font-size: 20px;
+            text-transform: capitalize;
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+        
+        .navbar-collapse {
+            position: fixed;
+            background: #1658ac;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 300px;
+            z-index: 2;
+            display: block;
+            transition: transform 0.5s;
+            transform: translateX(-100%);
+        }
+        
+        .navbar-collapse.show {
+            transform: translateX(0%);
+        }
+        
+        .clickD {
+            background: url(images/down-arrow-white.png) no-repeat;
+            right: 30px;
+            background-size: 15px;
+            height: 30px;
+            width: 30px;
+            background-position: center;
+            top: 8px;
+            position: absolute;
+            transition: transform 0.5s;
+        }
+        
+        .navbar .navbar-nav>li .clickD.toggled {
+            transform: rotate(180deg);
+        }
+        
+        .sub-menu {
+            position: relative;
+            opacity: 1;
+            visibility: visible;
+            display: none;
+            width: 100%;
+            padding: 10px 0;
+            border-radius: 5px;
+            z-index: 99;
+        }
+        
+        .sub-menu li a {
+            display: block;
+        }
+        
+        .sub-menu li:not(:last-child) a {
+            border-bottom: 1px dashed #ffffff5e;
+        }
+        
+        .clickD.toggled~.sub-menu,
+        .toggled .sub-menu {
+            display: block;
+            top: 0;
+            background: #1750bb;
+        }
+        
+        ._overHidden {
+            overflow: hidden;
+        }
+        
+        .navbar .navbar-nav>li {
+            padding: 0;
+            position: relative;
+            border-bottom: 1px dashed #ffffff5e;
+        }
+        
+        .navbar li a {
+            color: #fff;
+            display: block;
+            padding: 12px 15px;
+        }
+        
+        .navbar-toggler {
+            padding: 0;
+        }
+        
+        @media (min-width: 992px) {
+            ._mob-menu-hdr {
+                display: none;
+            }
+            .navbar-collapse {
+                position: unset;
+                transform: translate(0);
+                background: transparent;
+                border: none;
+            }
+            .navbar-nav {
+                flex-direction: row;
+            }
+            .navbar .navbar-nav>li {
+                border: none;
+            }
+            .navbar-toggler {
+                display: none;
+            }
+            .navbar li.menu-item-has-children a {
+                padding-right: 30px;
+            }
+            .clickD {
+                right: 0;
+                background-size: 12px;
+            }
+            .sub-menu {
+                position: absolute;
+                display: block;
+                width: 200px;
+                background: #fff;
+                box-shadow: -7.794px 4.5px 20px rgba(17, 79, 160, 0.17);
+                top: 110%;
+                padding: 10px 0;
+                border-radius: 5px;
+                z-index: 99;
+                visibility: hidden;
+                opacity: 0;
+                transition: all 0.4s;
+                -ms-transition: all 0.4s;
+            }
+            .sub-menu li {
+                list-style: none;
+            }
+            .sub-menu li a {
+                color: #000;
+            }
+            .menu-item-has-children:hover .sub-menu {
+                visibility: visible;
+                opacity: 1;
+                top: 100%;
+            }
+        }
+        /*========================================
+        ============ Header Css End  ===========
+        ==========================================*/
+        .preloader {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 999999;
+            background-color: rgba(255, 255, 255, 1);
+            background-color: #1c1e22;
+        }
+
+        .sliderForFig{
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+    
+    <!-- Begin: Header -->
+    <header class="_header">
+        <div class="_header-main">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <!-- logo -->
+                    <div class="logo"><a class="navbar-brand" href="index.html">LOGO</a></div>
+                    <!-- nav section -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="navbar-toggler-icon">
+                            <div class="bar bar-1"></div>
+                            <div class="bar bar-2"></div>
+                            <div class="bar bar-3"></div>
+                        </div>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarsExample05">
+                        <div class="_mob-menu-hdr">
+                            Menu
+                        </div>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="current-menu-item"><a href="index.html">Home</a></li>
+                            <li class="menu-item-has-children"><a href="service.html">Services</a>
+                                <span class="clickD"></span>
+                                <ul class="sub-menu">
+                                    <li><a href="#">submenu-1</a></li>
+                                    <li><a href="#">submenu-2</a></li>
+                                    <li><a href="#">submenu-3</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="accordian.html">Accordian</a>
+                            </li>
+                            <li>
+                                <a href="faq-component.html">FAQ's</a>
+                            </li>
+                            <li>
+                                <a href="custom-inputs.html">Inputs</a>
+                            </li>
+                            <li>
+                                <a href="tables.html">Tables</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- End: Header -->
+
+    <!-- Begin: Main -->
+    <main class="_main">
+        <!-- Begin :  Banner -->
+        <section class="_bannerSlider">
+            <div class="owl-carousel owl-theme" id="bannerSlider">
+                <!-- item begin -->
+                <div class="item">
+                    <img src="images/banner-img-1.png" alt="Banner" class="_slider-img">
+                </div>
+                <!-- item end -->
+            </div>
+        </section>
+        <!-- End   :  Banner -->
+
+        <!-- Begin:  Section-->
+        <section class="sec-2 c-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="superCenter">
+                            <div class="box" contenteditable="">
+                                :)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End  :  Section-->
+
+    </main>
+    <!-- End: Main -->
+
+    <!-- Jquery-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script>
+        //Submenu
+        jQuery(".navbar-nav li .clickD").click(function() {
+            if (jQuery(this).parent('li').parent('ul').hasClass('sub-menu')) {
+                jQuery(this).toggleClass("toggled");
+            } else if (jQuery(this).hasClass("toggled")) {
+                jQuery(this).removeClass('toggled');
+            } else if (jQuery('.navbar-nav li .clickD').hasClass('toggled')) {
+                jQuery('.navbar-nav li .clickD').removeClass('toggled');
+                jQuery(this).toggleClass("toggled");
+            } else {
+                jQuery(this).toggleClass("toggled");
+            }
+        });
+        //Mobile Menu 
+        $(document).ready(function() {
+            $(".navbar-toggler").click(function(e) {
+                e.stopPropagation();
+                $(this).toggleClass('change');
+                $('body').toggleClass('_overHidden');
+                if ($('.navbar-collapse').hasClass("show")) {
+                    $('.navbar-collapse').removeClass("show");
+                } else {
+                    $('.navbar-collapse').addClass("show");
+                }
+            });
+            $(document).on('click', function(e) {
+                var menu_opened = $('.navbar-collapse').hasClass('show');
+                if (!$(e.target).closest('.navbar-collapse').length &&
+                    !$(e.target).is('.navbar-collapse') &&
+                    menu_opened === true) {
+                    $('.navbar-collapse').collapse('toggle');
+                    $('.navbar-toggler').removeClass('change');
+                    $('body').removeClass('_overHidden');
+                }
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
