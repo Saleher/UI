@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    
+    <!-- Style : Mobile First  -->
+
+    <style>
+        .section{
+            /* padding: 80px 0; */
+            background-color: #ddd;
+            min-height: 100vh;
+        }
+        .setion-2{
+            background-color: blueviolet;
+        }
+        .setion-3{
+            background-color: cadetblue;
+        }
+        .setion-4{
+            background-color: crimson;
+            color: #fff;
+        }
+
+        .setion-5{
+            background-color: darkslategray;
+            color: #fff;
+        }
+
+        
+    </style>
+  
+</head>
+
+<body>
+   
+
+    <!-- Begin: Main -->
+    <main class="_main" id="fullpage">
+        <!-- Begin :  Banner -->
+        <section class="section setion-1">
+           <div class="container">
+               <div class="row">
+                   <div class="col-md-7 col-lg-7 mx-auto">
+                        <div class="content text-center">
+                            <h2>This is Section One</h2>
+                            <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, vero quam distinctio quidem iure corporis neque id fugiat dolorem cum dignissimos beatae quod commodi. Molestias cupiditate iusto explicabo magni expedita!</h6>
+                        </div>
+                   </div>
+               </div>                
+           </div>
+        </section>
+        <!-- End   :  Banner -->
+
+        <!-- Begin :  Banner -->
+        <section class="section setion-2">
+           <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-lg-7 mx-auto">
+                        <div class="content text-center" data-aos="slide-up">
+                            <h2 >This is Section Two</h2>
+                            <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, vero quam distinctio quidem iure corporis neque id fugiat dolorem cum dignissimos beatae quod commodi. Molestias cupiditate iusto explicabo magni expedita!</h6>
+                        </div>
+                    </div>
+                </div> 
+           </div>
+        </section>
+        <!-- End   :  Banner -->
+
+        <!-- Section 3 :  Begin -->
+        <section class="section setion-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-lg-7 mx-auto">
+                         <div class="content text-center" data-aos="zoom-in">
+                             <h2>This is Section Three</h2>
+                             <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, vero quam distinctio quidem iure corporis neque id fugiat dolorem cum dignissimos beatae quod commodi. Molestias cupiditate iusto explicabo magni expedita!</h6>
+                         </div>
+                    </div>
+                </div> 
+            </div>
+         </section>
+         <!-- Section 3 :  End -->
+
+        <!-- Begin :  Banner -->
+        <section class="section setion-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-lg-7 mx-auto">
+                         <div class="content text-center" data-aos="zoom-in">
+                             <h2>This is Section Four</h2>
+                             <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, vero quam distinctio quidem iure corporis neque id fugiat dolorem cum dignissimos beatae quod commodi. Molestias cupiditate iusto explicabo magni expedita!</h6>
+                         </div>
+                    </div>
+                </div> 
+            </div>
+         </section>
+         <!-- End   :  Banner -->
+
+         <!-- Begin :  Banner -->
+        <section class="section setion-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-lg-7 mx-auto">
+                         <div class="content text-center" data-aos="zoom-in">
+                             <h2>This is Section Five</h2>
+                             <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, vero quam distinctio quidem iure corporis neque id fugiat dolorem cum dignissimos beatae quod commodi. Molestias cupiditate iusto explicabo magni expedita!</h6>
+                         </div>
+                    </div>
+                </div> 
+            </div>
+         </section>
+         <!-- End   :  Banner -->
+
+    </main>
+    <!-- End: Main -->
+
+    <!-- Jquery-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.fullpage.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js" integrity="sha512-bxzECOBohzcTcWocMAlNDE2kYs0QgwGs4eD8TlAN2vfovq13kfDfp95sJSZrNpt0VMkpP93ZxLC/+WN/7Trw2g==" crossorigin="anonymous"></script> -->
+  
+    <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+            scrollBar: true,
+            fitToSection: false,
+            navigation: true,
+            lockAnchors: true,
+            css3: true,
+	        scrollingSpeed: 700,
+            });
+        });
+    </script>
+
+    <script>
+        AOS.init({
+        duration: 1000,
+        })
+    </script>
+
+</body>
+
+</html>
